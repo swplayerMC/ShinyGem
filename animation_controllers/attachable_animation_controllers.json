@@ -5,6 +5,12 @@
 			"initial_state": "hold_1p",
 			"states": {
 				"hold_1p": {
+					// "particle_effects": [
+    				// 	{
+        			// 		"effect": "brilho",
+					// 		"locator": "center"
+    				// 	}
+					// ],
 					"animations": [
 						{"first_person_hold": "c.is_first_person"}
 					],
@@ -13,6 +19,12 @@
 					]
 				},
 				"hold_3p": {
+					// "particle_effects": [
+    				// 	{
+        			// 		"effect": "brilho",
+					// 		"locator": "center"
+    				// 	}
+					// ],
 					"animations": [
 						{"third_person_hold": "!c.is_first_person"}
 					],
