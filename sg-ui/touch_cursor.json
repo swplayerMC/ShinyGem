@@ -1,0 +1,22 @@
+{
+  "namespace": "SG_touch_cursor",
+  "animation": {
+    "anim_typt": "flip_book",
+    "duration": 2,
+    "easing": "linear",
+    "initial_uv": [ 17, 17 ],
+    "frame_count": 2,
+    "frame_step": 1,
+    "fps": 1
+  },
+  "touch_cursor": {
+    "type": "image",
+    "texture": "images/ui/touch_cursor",
+    "size": [ 20, 20 ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "anims": [
+      "@SG_touch_cursor.animation"
+    ]
+  }
+}

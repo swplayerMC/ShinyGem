@@ -4,7 +4,7 @@
     "crosshair_image": {
         "type": "image",
         "texture": "images/ui/crosshair", //O "crosshair.png" na pasta "images/ui"
-        "anchor_from": "center",
+    "anchor_from": "center",
         "anchor_to": "center",
         "size": [ 17, 17 ] // Não sei se usar porcentagem é melhor... Por enquanto, vamos usar pixels
     }
