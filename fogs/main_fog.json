@@ -1,28 +1,28 @@
 {
-  "format_version": "1.16.100",
-  "minecraft:fog_settings": {
-    "description": {
-      "identifier": "custom:fog_default"
-    },
-    "distance": {
-      "air": {
-        "fog_start": 0,
-        "fog_end": 1,
-        "fog_color": "#000FE6",
-        "render_distance_type": "render"
-      },
-      "water": {
-        "fog_start": 0,
-        "fog_end": 1,
-        "fog_color": "#000659",
-        "render_distance_type": "render"
-      },
-      "lava": {
-        "fog_start": 0,
-        "fog_end": 1,
-        "fog_color": "#CE4100",
-        "render_distance_type": "render"
-      }
+    "format_version": "1.16.100",
+    "minecraft:fog_settings": {
+        "description": {
+            "identifier": "custom:fog_default"
+        },
+        "distance": {
+            "air": {
+                "fog_start": 0,
+                "fog_end": 1,
+                "fog_color": "#000FE6",
+                "render_distance_type": "render"
+            },
+            "water": {
+                "fog_start": 0,
+                "fog_end": 1,
+                "fog_color": "#000659",
+                "render_distance_type": "render"
+            },
+            "lava": {
+                "fog_start": 0,
+                "fog_end": 1,
+                "fog_color": "#CE4100",
+                "render_distance_type": "render"
+            }
+        }
     }
-  }
 }
