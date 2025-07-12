@@ -3,10 +3,11 @@
 	"animations": {
 		"animation.genfx.sg_diamond.first_person_hold": {
 			"loop": true,
+      "animation_length": 1,
 			"particle_effects": {
 				"0.0": {
-					"effect": "brilho"//,
-					//"locator": "center"
+					"effect": "brilho",
+					"locator": "center"
 				}
 			},
 			"bones": {
@@ -19,10 +20,11 @@
 		},
 		"animation.genfx.sg_diamond.third_person_hold": {
 			"loop": true,
+      "animation_length": 1,
 			"particle_effects": {
 				"0.0": {
-					"effect": "brilho"//,
-					//"locator": "center"
+					"effect": "brilho",
+					"locator": "center"
 				}
 			},
 			"bones": {
