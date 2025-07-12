@@ -1,0 +1,143 @@
+{
+	"namespace": "SG_java_chat",
+
+/*	Better code a customized version from default source and adding it to the hud by the "modifications" object	*/
+/*	Melhor criar uma versão personalizada do recurso vanilla e adiciona-lo ao HUD pelo objeto "modifications"	*/
+// It prevents the UI from breaking
+// Isso evita que a IU quebre
+
+	"chat_message_in": { // Mensagem aparecendo (vindo da esquerda para a direita)
+    	"anim_type": "offset", // Tipo de animação para posição
+    	"easing": "out_back",
+    	"duration": 1, // Vai durar um segundo
+    	"from": [ "-100%", 0 ],
+    	"to": [ 0, 0 ],
+		"next": "@SG_java_chat.chat_message_wait" // Próxima animação para tocar quando essa terminar
+  	},
+
+  	"chat_message_wait": { // O tempo que o texto ficará visível na tela
+		"anim_type": "wait",
+		"duration": "$chat_item_lifetime", // Usa o tempo definido nas configurações de acessibilidade
+		"next": "@SG_java_chat.chat_message_out"
+	},
+
+	"chat_message_out": { // Mensagem desaparece (vai para o lado esquerdo de volta)
+		"anim_type": "offset",
+		"easing": "in_back",
+		"duration": 2, // Vai durar dois segundos
+		"from": [ 0, 0 ],
+		"to": [ "-100%", 0 ]
+	},
+
+	"chat_alpha_in": {
+		"anim_type": "alpha",
+		"easing": "out_back",
+		"duration": 2,
+		"from": 0.0,
+		"to": 0.25,
+		"next": "@SG_java_chat.chat_alpha_wait"
+	},
+
+	"chat_alpha_wait": {
+		"anim_type": "wait",
+		"duration": "($chat_item_lifetime - 1)",
+		"next": "@SG_java_chat.chat_alpha_out"
+	},
+
+	"chat_alpha_out": {
+		"anim_type": "alpha",
+		"easing": "in_back",
+		"duration": 1,
+		"from": 0.25,
+		"to": 0.0
+	},
+
+	"chat_label": { // Isso aqui tudo está igual ao vanilla (só mudei a lista "anims" para usar as nossas animações)
+		"type": "label",
+		"layer": 31,
+		"text": "#text",
+		"size": [ "100%", "default" ], // "default" significa "100%" também
+		"shadow": true,
+		"localize": false,
+		"color": "$chat_text_color",
+		"enable_profanity_filter": true, // O filtro de palavrões...
+		"anims": [
+			"@SG_java_chat.chat_message_in" // Usa a primeira animação, e ela vai dar sequência às outras
+		]
+	},
+
+	"chat_grid_item": {
+		"type": "panel",
+		"layer": 1,
+		"size": [ "100%-2px", "100%c" ],
+		"anchor_from": "bottom_left",
+		"anchor_to": "bottom_left",
+		"controls": [
+		{
+			"chat_background": {
+				"type": "image",
+				"texture": "textures/ui/Black", // É apenas uma imagem totalmente preta e opaca
+				"alpha": 1.0, // Deixo em 1, mas as animações que fiz vão sobrescrever isto
+				"size": [ "100%", "100%c" ],
+				"anchor_from": "bottom_left",
+				"anchor_to": "bottom_left",
+				"anims": [
+					"@SG_java_chat.chat_message_in",
+					"@SG_java_chat.chat_alpha_in"
+				],
+				"controls": [
+				{
+					"chat_text@chat_label": {
+						"anchor_from": "bottom_left",
+						"anchor_to": "bottom_left",
+						"offset": [ 0, 0 ]
+							}
+						}
+					]
+				}
+			}
+		]
+	},
+
+	"chat_panel": {
+		"type": "panel",
+		"size": [ "100%", "100%c" ],
+		"max_size": [ "50%", "100%c" ],
+		"anchor_from": "bottom_left",
+		"anchor_to": "bottom_left",
+		"controls": [
+		{
+		"stack_panel": {
+			"type": "stack_panel",
+			"factory": {
+				"name": "chat_item_factory",
+				"max_children_size": 50,
+				"control_ids": {
+					"chat_item": "chat_item@SG_java_chat.chat_grid_item"
+						}
+					}
+				}
+			}
+		]
+	},
+
+	"custom_chat": {
+		"type": "panel",
+		"offset": [ 10, -12 ],
+		"max_size": [ "60%", "80%" ],
+		"anchor_from": "bottom_left",
+		"anchor_to": "bottom_left",
+		"clips_children": true,
+		"controls": [
+		{ 
+			"chat_label@chat_label": {}
+		},
+		{
+			"chat_grid_item@chat_grid_item": {}
+		},
+		{
+			"chat_panel@chat_panel": {}
+		}
+		]
+	}
+}
