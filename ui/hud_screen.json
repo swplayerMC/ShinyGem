@@ -33,10 +33,10 @@
 					},
 					{
 						"custom_chat@SG_java_chat.custom_chat": {}
-					},
+					}/*,
 					{
 					    "hud_title_text@SG_title_panel.hud_title_text": {}
-					}
+					}*/
 				]
 			}
 		]

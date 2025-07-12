@@ -1,0 +1,26 @@
+{
+	"format_version": "1.19.0",
+	"animation_controllers": {
+		"controller.animation.sg_diamond.root": {
+			"initial_state": "hold_1p",
+			"states": {
+				"hold_1p": {
+					"animations": [
+						{"first_person_hold": "c.is_first_person"}
+					],
+					"transitions": [
+						{"hold_3p": "!c.is_first_person"}
+					]
+				},
+				"hold_3p": {
+					"animations": [
+						{"third_person_hold": "!c.is_first_person"}
+					],
+					"transitions": [
+						{"hold_1p": "c.is_first_person"}
+					]
+				}
+			}
+		}
+	}
+}

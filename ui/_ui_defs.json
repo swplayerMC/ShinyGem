@@ -1,12 +1,12 @@
 {
-  //De preferencia, organize em ordem alfabetica  :)
-  //It's good to put the json paths in alphabetical order   :)
-  "ui_defs": [
-    "sg-ui/crosshair_ui.json",
-    "sg-ui/custom_chat_panel.json",
-    "sg-ui/custom_title_panel.json",
-    "sg-ui/touch_cursor.json",
-    "ui/chat_screen.json",
-    "ui/hud_screen.json"
-  ]
+    //De preferencia, organize em ordem alfabetica  :)
+    //It's good to put the json paths in alphabetical order   :)
+    "ui_defs": [
+        "sg-ui/crosshair_ui.json",
+        "sg-ui/custom_chat_panel.json",
+        "sg-ui/custom_title_panel.json",
+        "sg-ui/touch_cursor.json",
+        "ui/chat_screen.json",
+        "ui/hud_screen.json"
+    ]
 }
