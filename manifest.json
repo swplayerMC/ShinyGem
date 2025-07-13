@@ -22,12 +22,10 @@
         {
             "type": "label",
             "text": "§l§aShinyGem§r §l[§r §b16§7x§r §l]§r"
-        },
+        }/*,
         {
             "type": "image",
-            "texture": "images/ui/title",
-            "anchor_from": "center",
-            "anchor_to": "center"
-        }
+            "texture": "images/ui/title"
+        }*/
     ]
 }
