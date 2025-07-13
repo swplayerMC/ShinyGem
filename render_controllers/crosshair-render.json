@@ -1,0 +1,24 @@
+{
+    "format_version": "1.18.20",
+    "render_controllers": {
+        "controller.render.sg_crosshair": {
+            "geometry": "Geometry.crosshair",
+            "materials": [ { "*": "Material.default" } ],
+            "textures": [ "Texture.crosshair" ],
+            "part_visibility": [
+                { "*": false },
+                { "crosshair": true },
+                { "linhas": true },
+                { "linha1": true },
+                { "linha2": true },
+                { "linha3": true },
+                { "linha4": true },
+                { "quadrado": true },
+                { "canto1": true },
+                { "canto2": true },
+                { "canto3": true },
+                { "canto4": true }
+            ]
+        }
+    }
+}

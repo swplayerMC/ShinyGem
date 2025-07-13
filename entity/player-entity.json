@@ -1,9 +1,10 @@
 {
-    "format_version": "1.21.90",
+    "format_version": "1.18.20",
     "minecraft:client_entity": {
         "description": {
         "identifier": "minecraft:player",
         "animations": {
+            "mirinha": "animation.sg_crosshair.inteiro",
             "root": "controller.animation.player.root",
             "base_controller": "controller.animation.player.base",
             "hudplayer": "controller.animation.player.hudplayer",
@@ -89,7 +90,8 @@
                 "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
             ],
             "animate": [
-                "root"
+                "root",
+                "mirinha"
             ]
         },
         //"particle_effects": { "sname": "identifier" },
@@ -102,13 +104,18 @@
         },
         "textures": {
             "default": "textures/entity/steve",
-            "cape": "textures/entity/cape_invisible"
+            "cape": "textures/entity/cape_invisible",
+            "crosshair": "images/models/crosshair"
         },
         "geometry": {
             "default": "geometry.humanoid.custom",
-            "cape": "geometry.cape"
+            "cape": "geometry.cape",
+            "crosshair": "geometry.sg_crosshair"
         },
         "render_controllers": [
+            {
+                "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
+            },
             {
                 "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"
             },
@@ -125,7 +132,7 @@
                 "controller.render.player.map": "variable.map_face_icon"
             }
         ],
-        "min_engine_version": "1.8.0",
+        "min_engine_version": "1.18.20",
         "enable_attachables": true
         }
     }

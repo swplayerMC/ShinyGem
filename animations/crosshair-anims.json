@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sg_crosshair.inteiro": {
+			"loop": true,
+            "bones": {
+                "crosshair": {
+                    "rotation": [0, 0, 0],
+                    "scale": 0.25
+                }
+            }
+		}
+	}
+}
