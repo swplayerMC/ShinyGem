@@ -3,48 +3,6 @@
     "minecraft:client_entity": {
         "description": {
         "identifier": "minecraft:player",
-        "min_engine_version": "1.8.0",
-        "materials": {
-            "default": "entity_alphatest",
-            "cape": "entity_alphatest",
-            "animated": "player_animated",
-            "spectator": "player_spectator"
-        },
-        "textures": {
-            "default": "textures/entity/steve",
-            "cape": "textures/entity/cape_invisible"
-        },
-        "geometry": {
-            "default": "geometry.humanoid.custom",
-            "cape": "geometry.cape"
-        },
-        //"particle_effects": { "sname": "identifier" },
-        //"sound_effects": { "sname": "event-identifier"},
-        "scripts": {
-            "scale": "0.9375",
-            //"variables": {},
-            "initialize": [
-                "variable.is_holding_right = 0.0;",
-                "variable.is_blinking = 0.0;",
-                "variable.last_blink_time = 0.0;",
-                "variable.hand_bob = 0.0;"
-            ], 
-            "pre_animation": [
-                "variable.helmet_layer_visible = !query.has_head_gear;",
-                "variable.leg_layer_visible = 1.0;",
-                "variable.boot_layer_visible = 1.0;",
-                "variable.chest_layer_visible = 1.0;",
-                "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
-                "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
-                "variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
-                "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
-                "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
-                "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
-            ],
-            "animate": [
-                "root"
-            ]
-        },
         "animations": {
             "root": "controller.animation.player.root",
             "base_controller": "controller.animation.player.base",
@@ -109,6 +67,47 @@
             "crawling.legs": "animation.player.crawl.legs",
             "holding_heavy_core": "animation.player.holding_heavy_core"
         },
+        "scripts": {
+            "scale": "0.9375",
+            //"variables": {},
+            "initialize": [
+                "variable.is_holding_right = 0.0;",
+                "variable.is_blinking = 0.0;",
+                "variable.last_blink_time = 0.0;",
+                "variable.hand_bob = 0.0;"
+            ], 
+            "pre_animation": [
+                "variable.helmet_layer_visible = !query.has_head_gear;",
+                "variable.leg_layer_visible = 1.0;",
+                "variable.boot_layer_visible = 1.0;",
+                "variable.chest_layer_visible = 1.0;",
+                "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
+                "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                "variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
+                "variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
+                "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
+                "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
+            ],
+            "animate": [
+                "root"
+            ]
+        },
+        //"particle_effects": { "sname": "identifier" },
+        //"sound_effects": { "sname": "event-identifier"},
+        "materials": {
+            "default": "entity_alphatest",
+            "cape": "entity_alphatest",
+            "animated": "player_animated",
+            "spectator": "player_spectator"
+        },
+        "textures": {
+            "default": "textures/entity/steve",
+            "cape": "textures/entity/cape_invisible"
+        },
+        "geometry": {
+            "default": "geometry.humanoid.custom",
+            "cape": "geometry.cape"
+        },
         "render_controllers": [
             {
                 "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"
@@ -126,6 +125,7 @@
                 "controller.render.player.map": "variable.map_face_icon"
             }
         ],
+        "min_engine_version": "1.8.0",
         "enable_attachables": true
         }
     }
