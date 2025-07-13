@@ -5,8 +5,8 @@
 			"loop": true,
             "bones": {
                 "crosshair": {
-                    "rotation": [0, 0, 0],
-                    "scale": 0.25
+                    "rotation": ["q.camera_rotation(0) + v.first_person_rotation_factor", "q.camera_rotation(1) + v.first_person_rotation_factor", 0],
+                    "position": [ "v.bob_animation ? 0 : { math.sin(-query.walk_distance * 180.0) * variable.hand_bob * 9.75 }", "v.bob_animation ? 0 : { -math.abs(math.cos(-query.walk_distance * 180.0)) * variable.hand_bob * 15.0 + variable.short_arm_offset_right }", 100 ]
                 }
             }
 		}

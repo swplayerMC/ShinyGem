@@ -12,13 +12,8 @@
 			},
 			"bones": [
 				{
-					"name": "head",
-					"pivot": [0, 27, 30]
-				},
-				{
 					"name": "crosshair",
-					"parent": "head",
-					"pivot": [0, 27, 30]
+					"pivot": [0, 27, 60]
 				},
 				{
 					"name": "ponto-centro",
