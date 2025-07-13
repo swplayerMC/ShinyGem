@@ -2,17 +2,17 @@
     "format_version": "1.21.90",
     "minecraft:attachable": {
         "description": {
-            "identifier": "minecraft:diamond",
+            "identifier": "minecraft:gold_ingot",
             "materials": {
                 "default": "entity_alphablend",
                 "enchanted": "entity_alphatest_glint"
             },
             "textures": {
-                "default": "images/models/diamante",
+                "default": "images/models/gold_ingot",
                 "enchanted": "textures/misc/enchanted_item_glint"
             },
             "geometry": {
-                "default": "geometry.sg_diamond"
+                "default": "geometry.sg_ingots"
             },
             "animations": {
                 "root": "controller.animation.sg_diamond.root",

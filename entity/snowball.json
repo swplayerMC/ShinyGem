@@ -1,0 +1,31 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:client_entity": {
+        "description": {
+            "identifier": "minecraft:snowball",
+            "materials": {
+                "default": "entity_alphablend",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "images/models/snowball",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.sg_snowball"
+            },
+            //"animations": {},
+            //"scripts": {
+            //    "initialize": [],
+            //    "pre_animation": [],
+            //    "animate": [
+            //        "root"
+            //    ],
+            //    "should_update_bones_and_effects_offscreen": true
+            //},
+            "render_controllers": [
+                "controller.render.item_sprite"
+            ]
+        }
+    }
+}
