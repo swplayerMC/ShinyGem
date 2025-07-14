@@ -16,7 +16,7 @@
 					"pivot": [0, 27, 60]
 				},
 				{
-					"name": "ponto-centro",
+					"name": "centro",
 					"parent": "crosshair",
 					"pivot": [0, 16, 0],
 					"cubes": [

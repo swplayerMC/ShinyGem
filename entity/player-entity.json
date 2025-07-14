@@ -78,6 +78,10 @@
                 "variable.hand_bob = 0.0;"
             ], 
             "pre_animation": [
+                "v.genfx_hsword = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
+                "v.genfx_hblock = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_block') ? 1 : 0;",
+                "v.genfx_standby = q.ground_speed > 0 ? 1 : 0;",
+                "v.genfx_attack = v.attack_time;",
                 "variable.helmet_layer_visible = !query.has_head_gear;",
                 "variable.leg_layer_visible = 1.0;",
                 "variable.boot_layer_visible = 1.0;",
