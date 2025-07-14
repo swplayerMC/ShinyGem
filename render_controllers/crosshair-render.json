@@ -2,6 +2,11 @@
     "format_version": "1.18.20",
     "render_controllers": {
         "controller.render.sg_crosshair": {
+            "arrays": {
+                "textures": {
+                    "Array.crosshair_colors": [ "Texture.crosshair", "Texture.crosshair_red" ]
+                }
+            }
             "geometry": "Geometry.crosshair",
             "materials": [ { "*": "Material.crosshair" } ],
             "textures": [ "Texture.crosshair" ],

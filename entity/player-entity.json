@@ -79,9 +79,10 @@
             ], 
             "pre_animation": [
                 "v.genfx_hsword = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
-                "v.genfx_hblock = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_block') ? 1 : 0;",
+                "v.genfx_hblock = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_placeable') ? 1 : 0;",
                 "v.genfx_standby = q.ground_speed > 0 ? 1 : 0;",
                 "v.genfx_attack = v.attack_time;",
+                "v.genfx_c_color = 2 + v.genfx_attack;",
                 "variable.helmet_layer_visible = !query.has_head_gear;",
                 "variable.leg_layer_visible = 1.0;",
                 "variable.boot_layer_visible = 1.0;",
@@ -111,6 +112,7 @@
             "default": "textures/entity/steve",
             "cape": "textures/entity/cape_invisible",
             "crosshair": "images/models/crosshair"
+            "crosshair_red": "images/models/crosshair_red"
         },
         "geometry": {
             "default": "geometry.humanoid.custom",
