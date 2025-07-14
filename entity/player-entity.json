@@ -100,7 +100,8 @@
             "default": "entity_alphatest",
             "cape": "entity_alphatest",
             "animated": "player_animated",
-            "spectator": "player_spectator"
+            "spectator": "player_spectator",
+            "crosshair": "entity"
         },
         "textures": {
             "default": "textures/entity/steve",

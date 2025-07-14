@@ -1,15 +1,15 @@
 {
-	"format_version": "1.19.0",
+	"format_version": "1.10.0",
 	"animation_controllers": {
 		"controller.animation.sg_diamond.root": {
 			"initial_state": "hold_1p",
 			"states": {
 				"hold_1p": {
 					// "particle_effects": [
-    				// 	{
-        			// 		"effect": "brilho",
-					// 		"locator": "center"
-    				// 	}
+    				// 		{
+        			// 			"effect": "brilho",
+					// 			"locator": "center"
+    				// 		}
 					// ],
 					"animations": [
 						{"first_person_hold": "c.is_first_person"}
@@ -20,10 +20,10 @@
 				},
 				"hold_3p": {
 					// "particle_effects": [
-    				// 	{
-        			// 		"effect": "brilho",
-					// 		"locator": "center"
-    				// 	}
+    				// 		{
+        			// 			"effect": "brilho",
+					// 			"locator": "center"
+    				// 		}
 					// ],
 					"animations": [
 						{"third_person_hold": "!c.is_first_person"}

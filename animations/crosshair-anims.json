@@ -6,7 +6,7 @@
             "bones": {
                 "crosshair": {
                     "rotation": ["q.camera_rotation(0)", "q.camera_rotation(1)", 0],
-                    "position": [ 0, 0, 100 ]
+                    "position": [ 0, 0, 200 ]
                 }
             }
 		}
