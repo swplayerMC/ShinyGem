@@ -8,5 +8,61 @@
         "anchor_to": "center",
         "alpha": 0,
         "size": [ 17, 17 ] // Não sei se usar porcentagem é melhor... Por enquanto, vamos usar pixels
+    },
+
+    "v_bob_warning_anim_in": {
+        "anim_type": "offset", // Posição
+        "duration": 1,
+        "easing": "in_cubic",
+        "from": [ 200, 0 ],
+        "to": [ 0, 0 ],
+        "next": "@SG_crosshair.v_bob_warning_anim_wait"
+    },
+
+    "v_bob_warning_anim_wait": {
+        "anim_type": "wait",
+        "duration": 5,
+        "next": "@SG_crosshair.v_bob_warning_anim_out"
+    },
+
+    "v_bob_warning_anim_out": {
+        "anim_type": "offset",
+        "duration": 1,
+        "easing": "out_cubic",
+        "from": [ 0, 0 ],
+        "to": [ 200, 0 ]
+    },
+
+    "v_bob_warning_bg": { // Para avisar o jogador a desativar a opção "Movimentos na Visão"
+        "type": "image",
+        "texture": "images/ui/warning_bg"
+    },
+
+    "v_bob_warning_text": {
+        "type": "label",
+        "text": "You should disable\n View Bobbing option\n for the crosshair\n be always centered!",
+        "color": [ 1.0, 0.0, 0.0 ],
+        "offset": [ 5, 0 ]/*,
+        "localize": true*/
+    },
+
+    "view_bobbing_warning": {
+        "type": "panel",
+        "anchor_from": "right_middle",
+        "anchor_to": "right_middle",
+        "size": [ "20%", "15%" ],
+        "controls": [
+            {
+                "@SG_crosshair.v_bob_warning_bg": {}
+            },
+            {
+                "@SG_crosshair.v_bob_warning_text": {
+                    "size": [ "100%", "80%" ]
+                }
+            }
+        ],
+        "anims": [
+            "@SG_crosshair.v_bob_warning_anim_in"
+        ]
     }
 }

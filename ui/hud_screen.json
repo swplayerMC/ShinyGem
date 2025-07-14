@@ -33,6 +33,9 @@
 					},
 					{
 						"custom_chat@SG_java_chat.custom_chat": {}
+					},
+					{
+						"view_bobbing_warning@SG_crosshair.view_bobbing_warning": {}
 					}/*,
 					{
 					    "hud_title_text@SG_title_panel.hud_title_text": {}
