@@ -2,36 +2,23 @@
     "format_version": "1.18.20",
     "render_controllers": {
         "controller.render.sg_crosshair": {
-            "arrays": {
-                "textures": {
-                    "Array.crosshair_colors": [ "Texture.crosshair", "Texture.crosshair_red" ]
-                },
-                "geometries": {
-                    "Array.crosshair_geos": [ "Geometry.crosshair1", "Geometry.crosshair2", "Geometry.crosshair3", "Geometry.crosshair4" ]
-                }
-            },
-            "geometry": "Array.crosshair_geos[v.genfx_crosshair_geo]",
+            "geometry": "Geometry.crosshair",
             "materials": [ { "*": "Material.crosshair" } ],
             "textures": [ "Texture.crosshair" ],
             "part_visibility": [
-                { "*": false },
-                { "linhas": true },
-                { "linha1": true },
-                { "linha2": true },
-                { "linha3": true },
-                { "linha4": true },
-                { "quadrado": true },
-                { "canto1": true },
-                { "canto2": true },
-                { "canto3": true },
-                { "canto4": true },
-                { "centro": "v.genfx_standby" }
+                { "*": "v.genfx_standby" }
             ],
             "overlay_color": {
                 "r": "1.0f",
                 "g": "1.0f",
                 "b": "1.0f",
                 "a": 1.0
+            },
+            "is_hurt_color": {
+                "r": "v.genfx_vfx_jump_reset ? 0 : 1",
+                "g": "v.genfx_vfx_jump_reset ? 1 : 0",
+                "b": 0,
+                "a": 0.5
             },
             "filter_lighting": true,
             "ignore_lighting": true,

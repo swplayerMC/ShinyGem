@@ -66,11 +66,12 @@
             "crawling": "animation.player.crawl",
             "crawling.legs": "animation.player.crawl.legs",
             "holding_heavy_core": "animation.player.holding_heavy_core",
-            "mirinha": "controller.animation.genfx_crosshairs",
-            "mira_position": "animation.sg_crosshair.inteiro",
-            "mira_main": "animation.sg_crosshair.main.attack",
-            "mira_picareta": "animation.sg_crosshair.pickaxe",
-            "mira_blocos": "animation.sg_crosshair.building"
+            "dynamic_crosshair": "controller.animation.genfx_crosshairs",
+            "crosshair_position_fix": "animation.sg_crosshair.inteiro",
+            "c_main": "animation.sg_crosshair.main",
+            "c_holding_projectile": "animation.sg_crosshair.holding_projectile",
+            "c_holding_pickaxe": "animation.sg_crosshair.holding_pickaxe",
+            "c_holding_others": "animation.sg_crosshair.holding_others"
         },
         "scripts": {
             "scale": "0.9375",
@@ -85,17 +86,23 @@
             "pre_animation": [
                 "v.genfx_attack = v.attack_time;",
 
-                "t.genfx_jreset_speed = q.ground_speed < q.vertical_speed ? 1 : 0;",
+                "t.genfx_jreset_speed = q.ground_speed < 2 && q.vertical_speed > 1 ? 1 : 0;",
 
-                "v.genfx_vfx_jump_reset = ((q.is_jumping + t.genfx_jreset_speed) + q.is_on_ground) > 2 ? 1 : 0;",
+                "v.genfx_vfx_jump_reset = q.is_jumping && (t.genfx_jreset_speed > 0) ? 1 : 0;",
 
-                "v.genfx_hpickaxe = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? { v.genfx_crosshair_geo = 3; };",
+                "v.genfx_hsword = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
 
-                "v.genfx_hprojectile = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:projectile', 'minecraft:is_summonable', 'minecraft:is_spawnable') ? { v.genfx_crosshair_geo = 2; };",
+                "v.genfx_hpickaxe = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? 1 : 0;",
 
-                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || (q.get_equipped_item_name == ('bow' || 'crossbow' || 'trident')) ? 1 : 0;",
+                "v.genfx_hprojectile = q.get_equipped_item_name == ('snowball') || q.get_equipped_item_name == ('egg') || q.get_equipped_item_name == ('ender_pearl') ? 1 : 0;",
 
-                "v.genfx_hothers = (v.genfx_hpickaxe + v.genfx_hprojectile == 0) && !q.is_item_equipped ? { v.genfx_crosshair_geo = 1; };",
+                "v.genfx_hthrowables = q.get_equipped_item_name == ('bow') || q.get_equipped_item_name == ('crossbow') || q.get_equipped_item_name == ('trident') ? 1 : 0;",
+
+                "v.genfx_hnone = q.get_equipped_item_name == '' ? 1 : 0;",
+
+                "v.genfx_hothers = (!v.genfx_hpickaxe && !v.genfx_hprojectile) && !v.genfx_hsword && !v.genfx_hnone ? 1 : 0;",
+
+                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || v.genfx_hthrowables ? 1 : 0;",
 
 
                 "variable.helmet_layer_visible = !query.has_head_gear;",
@@ -111,7 +118,8 @@
             ],
             "animate": [
                 "root",
-                "mirinha"
+                "dynamic_crosshair",
+                "crosshair_position_fix"
             ]
         },
         //"particle_effects": { "sname": "identifier" },
@@ -132,15 +140,9 @@
         "geometry": {
             "default": "geometry.humanoid.custom",
             "cape": "geometry.cape",
-            "crosshair1": "geometry.sg_crosshair0",
-            "crosshair2": "geometry.sg_crosshair1",
-            "crosshair3": "geometry.sg_crosshair2",
-            "crosshair4": "geometry.sg_crosshair3"
+            "crosshair": "geometry.sg_crosshair"
         },
         "render_controllers": [
-            {
-                "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
-            },
             {
                 "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"
             },
@@ -155,6 +157,9 @@
             },
             {
                 "controller.render.player.map": "variable.map_face_icon"
+            },
+            {
+                "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
             }
         ],
         "min_engine_version": "1.18.20",

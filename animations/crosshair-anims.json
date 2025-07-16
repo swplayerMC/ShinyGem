@@ -10,73 +10,152 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.main.attack": {
+		"animation.sg_crosshair.main": {
 			"loop": true,
+			"animation_length": 0.7,
 			"override_previous_animation": true,
 			"bones": {
+				"linhas": {
+					"rotation": [0, 0, 45]
+				},
 				"linha1": {
-					"position": [0, "-v.attack_time*5", 0]
+					"position": {
+						"0.0": [0, "v.attack_time > 0 ? -15", 0],
+						"3.0": [0, 0, 0]
+					}
 				},
 				"linha2": {
-					"position": ["v.attack_time*5", 0, 0]
+					"position": {
+						"0.0": ["v.attack_time > 0 ? 15", 0, 0],
+						"3.0": [0, 0, 0]
+					}
 				},
 				"linha3": {
-					"position": [0, "v.attack_time*5", 0]
+					"position": {
+						"0.0": [0, "v.attack_time > 0 ? 15", 0],
+						"3.0": [0, 0, 0]
+					}
 				},
 				"linha4": {
-					"position": ["-v.attack_time*5", 0, 0]
+					"position": {
+						"0.0": ["v.attack_time > 0 ? -15", 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"quadrado": {
+					"scale": 0
+				},
+				"losangulo": {
+					"scale": 0
 				}
 			}
 		},
-		"animation.sg_crosshair.pickaxe": {
+		"animation.sg_crosshair.holding_projectile": {
 			"loop": true,
-			"animation_length": 1.0833,
+			"animation_length": 0.25,
 			"override_previous_animation": true,
 			"bones": {
+				"linhas": {
+					"scale": 0
+				},
 				"quadrado": {
-					"rotation": [0, 0, "q.camera_rotation(0)"]
+					"scale": 0
+				},
+				"losangulo": {
+					"scale": {
+						"0.0": ["v.attack_time > 0 ? 1.2 : 1", "v.attack_time > 0 ? 1.2 : 1", "v.attack_time > 0 ? 1.2 : 1"],
+						"0.25": [1, 1, 1]
+					}
+				}
+			}
+		},
+		"animation.sg_crosshair.holding_others": {
+			"loop": true,
+			"animation_length": 0.5,
+			"override_previous_animation": true,
+			"bones": {
+				"linha1": {
+					"position": {
+						"0.0": [0, "v.attack_time > 0 ? -4", 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"linha2": {
+					"position": {
+						"0.0": ["v.attack_time > 0 ? 4", 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"linha3": {
+					"position": {
+						"0.0": [0, "v.attack_time > 0 ? 4", 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"linha4": {
+					"position": {
+						"0.0": ["v.attack_time > 0 ? -4", 0, 0],
+						"3.0": [0, 0, 0]
+					}
+				},
+				"canto1": {
+					"rotation": [0, 0, "q.is_using_item ? 180"],
+					"position": ["q.is_using_item ? -10", "q.is_using_item ? 10", 0]
+				},
+				"canto2": {
+					"rotation": [0, 0, "q.is_using_item ? 180"],
+					"position": ["q.is_using_item ? -14", "q.is_using_item ? 10", 0]
+				},
+				"canto3": {
+					"rotation": [0, 0, "q.is_using_item ? 180"],
+					"position": ["q.is_using_item ? -14", "q.is_using_item ? 10", 0]
+				},
+				"canto4": {
+					"rotation": [0, 0, "q.is_using_item ? 180"],
+					"position": ["q.is_using_item ? -14", "q.is_using_item ? 10", 0]
+				},
+				"losangulo": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.sg_crosshair.holding_pickaxe": {
+			"loop": true,
+			"animation_length": 1,
+			"override_previous_animation": true,
+			"bones": {
+				"linhas": {
+					"scale": 0
+				},
+				"quadrado": {
+					"rotation": [0, 0, "180 + q.camera_rotation(0)"]
 				},
 				"canto1": {
 					"position": {
-						"0.0": [0, 0, 0],
-						"0.0833": [-1, 1, 0]
+						"0.0": ["-v.attack_time*10", "v.attack_time*10", 0],
+						"3.0": [0, 0, 0]
 					}
 				},
 				"canto2": {
 					"position": {
-						"0.0": [0, 0, 0],
-						"0.0833": [1, 1, 0]
+						"0.0": ["v.attack_time*10", "v.attack_time*10", 0],
+						"3.0": [0, 0, 0]
 					}
 				},
 				"canto3": {
 					"position": {
-						"0.0": [0, 0, 0],
-						"0.0833": [1, -1, 0]
+						"0.0": ["v.attack_time*10", "-v.attack_time*10", 0],
+						"3.0": [0, 0, 0]
 					}
 				},
 				"canto4": {
 					"position": {
-						"0.0": [0, 0, 0],
-						"0.0833": [-1, -1, 0]
+						"0.0": ["-v.attack_time*10", "-v.attack_time*10", 0],
+						"3.0": [0, 0, 0]
 					}
-				}
-			}
-		},
-		"animation.sg_crosshair.building": {
-			"loop": true,
-			"override_previous_animation": true,
-			"bones": {
-				"linha1": {
-					"position": [0, "-v.attack_time*3", 0]
 				},
-				"linha2": {
-					"position": ["v.attack_time*3", 0, 0]
-				},
-				"linha3": {
-					"position": [0, "v.attack_time*3", 0]
-				},
-				"linha4": {
-					"position": ["-v.attack_time*3", 0, 0]
+				"losangulo": {
+					"scale": 0
 				}
 			}
 		}
