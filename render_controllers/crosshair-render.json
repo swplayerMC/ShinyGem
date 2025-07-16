@@ -14,7 +14,7 @@
             "materials": [ { "*": "Material.crosshair" } ],
             "textures": [ "Texture.crosshair" ],
             "part_visibility": [
-                { "*": true },
+                { "*": false },
                 { "linhas": true },
                 { "linha1": true },
                 { "linha2": true },

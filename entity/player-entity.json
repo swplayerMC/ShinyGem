@@ -89,15 +89,13 @@
 
                 "v.genfx_vfx_jump_reset = ((q.is_jumping + t.genfx_jreset_speed) + q.is_on_ground) > 2 ? 1 : 0;",
 
-                "v.genfx_hblock = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:can_place_on') ? { v.genfx_crosshair_geo = 1; };",
-
-                "v.genfx_hsword = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword');",
-
                 "v.genfx_hpickaxe = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? { v.genfx_crosshair_geo = 3; };",
 
-                "v.genfx_hprojectile = q.is_item_name_any('minecraft:player', 'slot.weapon.mainhand', 'minecraft:snowball', 'minecraft:ender_pearl', 'minecraft:egg') ? { v.genfx_crosshair_geo = 2; };",
+                "v.genfx_hprojectile = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:projectile', 'minecraft:is_summonable', 'minecraft:is_spawnable') ? { v.genfx_crosshair_geo = 2; };",
 
-                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || q.is_item_name_any('minecraft:player','slot.weapon.mainhand', 'minecraft:bow', 'minecraft:crossbow') ? 1 : 0;",
+                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || (q.get_equipped_item_name == ('bow' || 'crossbow' || 'trident')) ? 1 : 0;",
+
+                "v.genfx_hothers = (v.genfx_hpickaxe + v.genfx_hprojectile == 0) && !q.is_item_equipped ? { v.genfx_crosshair_geo = 1; };",
 
 
                 "variable.helmet_layer_visible = !query.has_head_gear;",
