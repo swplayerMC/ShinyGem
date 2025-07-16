@@ -4,7 +4,6 @@
         "description": {
         "identifier": "minecraft:player",
         "animations": {
-            "mirinha": "animation.sg_crosshair.inteiro",
             "root": "controller.animation.player.root",
             "base_controller": "controller.animation.player.base",
             "hudplayer": "controller.animation.player.hudplayer",
@@ -66,7 +65,12 @@
             "brushing": "animation.humanoid.brushing",
             "crawling": "animation.player.crawl",
             "crawling.legs": "animation.player.crawl.legs",
-            "holding_heavy_core": "animation.player.holding_heavy_core"
+            "holding_heavy_core": "animation.player.holding_heavy_core",
+            "mirinha": "controller.animation.genfx_crosshairs",
+            "mira_position": "animation.sg_crosshair.inteiro",
+            "mira_main": "animation.sg_crosshair.main.attack",
+            "mira_picareta": "animation.sg_crosshair.pickaxe",
+            "mira_blocos": "animation.sg_crosshair.building"
         },
         "scripts": {
             "scale": "0.9375",
@@ -79,14 +83,23 @@
                 "variable.hand_bob = 0.0;"
             ], 
             "pre_animation": [
-                "v.genfx_standby = q.ground_speed > 0 ? 1 : 0;",
                 "v.genfx_attack = v.attack_time;",
+
                 "t.genfx_jreset_speed = q.ground_speed < q.vertical_speed ? 1 : 0;",
+
                 "v.genfx_vfx_jump_reset = ((q.is_jumping + t.genfx_jreset_speed) + q.is_on_ground) > 2 ? 1 : 0;",
-                "v.genfx_hblock = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:can_place_on');",
+
+                "v.genfx_hblock = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:can_place_on') ? { v.genfx_crosshair_geo = 1; };",
+
                 "v.genfx_hsword = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword');",
-                "v.genfx_hpickaxe = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe');",
-                "v.genfx_hprojectile = q.is_item_name_any('slot.weapon.mainhand', 'minecraft:snowball', 'minecraft:ender_pearl', 'minecraff:egg');",
+
+                "v.genfx_hpickaxe = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? { v.genfx_crosshair_geo = 3; };",
+
+                "v.genfx_hprojectile = q.is_item_name_any('minecraft:player', 'slot.weapon.mainhand', 'minecraft:snowball', 'minecraft:ender_pearl', 'minecraft:egg') ? { v.genfx_crosshair_geo = 2; };",
+
+                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || q.is_item_name_any('minecraft:player','slot.weapon.mainhand', 'minecraft:bow', 'minecraft:crossbow') ? 1 : 0;",
+
+
                 "variable.helmet_layer_visible = !query.has_head_gear;",
                 "variable.leg_layer_visible = 1.0;",
                 "variable.boot_layer_visible = 1.0;",
@@ -115,13 +128,16 @@
         "textures": {
             "default": "textures/entity/steve",
             "cape": "textures/entity/cape_invisible",
-            "crosshair": "images/models/crosshair"
+            "crosshair": "images/models/crosshair",
             "crosshair_red": "images/models/crosshair_red"
         },
         "geometry": {
             "default": "geometry.humanoid.custom",
             "cape": "geometry.cape",
-            "crosshair": "geometry.sg_crosshair"
+            "crosshair1": "geometry.sg_crosshair0",
+            "crosshair2": "geometry.sg_crosshair1",
+            "crosshair3": "geometry.sg_crosshair2",
+            "crosshair4": "geometry.sg_crosshair3"
         },
         "render_controllers": [
             {

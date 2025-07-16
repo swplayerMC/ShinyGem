@@ -1,0 +1,52 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.genfx_crosshairs": {
+            "initial_state": "main",
+            "states": {
+                "main": {
+                    "animations": [
+                        "mira_position",
+                        "mira_main"
+                    ],
+                    "transitions": [
+                        {
+                            "building": "v.genfx_crosshair_geo == 1"
+                        },
+                        {
+                            "holding_pickaxe": "v.genfx_crosshair_geo == 3"
+                        }
+                    ]
+                },
+                "holding_pickaxe": {
+                    "animations": [
+                        "mira_position",
+                        "mira_picareta"
+                    ],
+                    "transitions": [
+                        {
+                            "main": "v.genfx_crosshair_geo == 0"
+                        },
+                        {
+                            "building": "v.genfx_crosshair_geo == 1"
+                        }
+                    ]
+                },
+                "building": {
+                    "animations": [
+                        "mira_position",
+                        "mira_blocos"
+                    ],
+                    "transitions": [
+                        {
+                            "main":"v.genfx_crosshair_geo == 0"
+                        },
+                        {
+                            "holding_pickaxe": "v.genfx_crosshair_geo == 3"
+                        }
+                    ]
+                }
+            }
+        }
+    }
+}

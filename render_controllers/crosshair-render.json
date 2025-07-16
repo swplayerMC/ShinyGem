@@ -5,25 +5,27 @@
             "arrays": {
                 "textures": {
                     "Array.crosshair_colors": [ "Texture.crosshair", "Texture.crosshair_red" ]
+                },
+                "geometries": {
+                    "Array.crosshair_geos": [ "Geometry.crosshair1", "Geometry.crosshair2", "Geometry.crosshair3", "Geometry.crosshair4" ]
                 }
-            }
-            "geometry": "Geometry.crosshair",
+            },
+            "geometry": "Array.crosshair_geos[v.genfx_crosshair_geo]",
             "materials": [ { "*": "Material.crosshair" } ],
             "textures": [ "Texture.crosshair" ],
             "part_visibility": [
-                { "*": false },
-                { "crosshair": true },
+                { "*": true },
                 { "linhas": true },
+                { "linha1": true },
+                { "linha2": true },
+                { "linha3": true },
+                { "linha4": true },
                 { "quadrado": true },
-                { "centro": "v.genfx_standby" },
-                { "linha1": "v.genfx_attack" },
-                { "linha2": "v.genfx_attack" },
-                { "linha3": "v.genfx_attack" },
-                { "linha4": "v.genfx_attack" },
-                { "canto1": "v.genfx_hsword" },
-                { "canto2": "v.genfx_hsword" },
-                { "canto3": "v.genfx_hsword" },
-                { "canto4": "v.genfx_hsword" }
+                { "canto1": true },
+                { "canto2": true },
+                { "canto3": true },
+                { "canto4": true },
+                { "centro": "v.genfx_standby" }
             ],
             "overlay_color": {
                 "r": "1.0f",

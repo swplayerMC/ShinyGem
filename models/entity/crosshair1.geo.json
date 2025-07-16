@@ -1,9 +1,9 @@
 {
-	"format_version": "1.16.0",
+	"format_version": "1.12.0",
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.sg_crosshair",
+				"identifier": "geometry.sg_crosshair1",
 				"texture_width": 1,
 				"texture_height": 1,
 				"visible_bounds_width": 3,

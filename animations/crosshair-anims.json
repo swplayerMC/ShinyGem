@@ -3,12 +3,82 @@
 	"animations": {
 		"animation.sg_crosshair.inteiro": {
 			"loop": true,
-            "bones": {
-                "crosshair": {
-                    "rotation": [0, 0, 0],
-                    "position": [ 0, 0, 200 ]
-                }
-            }
+			"bones": {
+				"crosshair": {
+					"rotation": [0, 0, 0],
+					"position": [0, 0, 200]
+				}
+			}
+		},
+		"animation.sg_crosshair.main.attack": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"linha1": {
+					"position": [0, "-v.attack_time*5", 0]
+				},
+				"linha2": {
+					"position": ["v.attack_time*5", 0, 0]
+				},
+				"linha3": {
+					"position": [0, "v.attack_time*5", 0]
+				},
+				"linha4": {
+					"position": ["-v.attack_time*5", 0, 0]
+				}
+			}
+		},
+		"animation.sg_crosshair.pickaxe": {
+			"loop": true,
+			"animation_length": 1.0833,
+			"override_previous_animation": true,
+			"bones": {
+				"quadrado": {
+					"rotation": [0, 0, "q.camera_rotation(0)"]
+				},
+				"canto1": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-1, 1, 0]
+					}
+				},
+				"canto2": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [1, 1, 0]
+					}
+				},
+				"canto3": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [1, -1, 0]
+					}
+				},
+				"canto4": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.0833": [-1, -1, 0]
+					}
+				}
+			}
+		},
+		"animation.sg_crosshair.building": {
+			"loop": true,
+			"override_previous_animation": true,
+			"bones": {
+				"linha1": {
+					"position": [0, "-v.attack_time*3", 0]
+				},
+				"linha2": {
+					"position": ["v.attack_time*3", 0, 0]
+				},
+				"linha3": {
+					"position": [0, "v.attack_time*3", 0]
+				},
+				"linha4": {
+					"position": ["-v.attack_time*3", 0, 0]
+				}
+			}
 		}
 	}
 }
