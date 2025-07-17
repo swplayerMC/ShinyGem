@@ -66,6 +66,7 @@
             "crawling": "animation.player.crawl",
             "crawling.legs": "animation.player.crawl.legs",
             "holding_heavy_core": "animation.player.holding_heavy_core",
+            "spawning": "animation.player.spawn_setup",
             "dynamic_crosshair": "controller.animation.genfx_crosshairs",
             "crosshair_position_fix": "animation.sg_crosshair.inteiro",
             "c_main": "animation.sg_crosshair.main",
@@ -119,7 +120,10 @@
             "animate": [
                 "root",
                 "dynamic_crosshair",
-                "crosshair_position_fix"
+                "crosshair_position_fix",
+                {
+                    "spawning": "q.life_time < 0.9"
+                }
             ]
         },
         //"particle_effects": { "sname": "identifier" },

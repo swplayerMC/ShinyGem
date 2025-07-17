@@ -137,7 +137,10 @@
 					"scale": 0
 				},
 				"quadrado": {
-					"rotation": [0, 0, "180 + q.camera_rotation(0)"]
+					"relative_to": {
+						"rotation": "entity"
+					},
+					"rotation": [0, 0, "q.target_x_rotation*3.7"]
 				},
 				"canto1": {
 					"position": {
