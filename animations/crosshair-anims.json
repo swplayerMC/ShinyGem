@@ -12,7 +12,7 @@
 		},
 		"animation.sg_crosshair.main": {
 			"loop": true,
-			"animation_length": 0.7,
+			"animation_length": 3,
 			"override_previous_animation": true,
 			"bones": {
 				"linhas": {
@@ -47,6 +47,9 @@
 				},
 				"losangulo": {
 					"scale": 0
+				},
+				"equipar": {
+					"scale": 0
 				}
 			}
 		},
@@ -66,12 +69,15 @@
 						"0.0": ["v.attack_time > 0 ? 1.2 : 1", "v.attack_time > 0 ? 1.2 : 1", "v.attack_time > 0 ? 1.2 : 1"],
 						"0.25": [1, 1, 1]
 					}
+				},
+				"equipar": {
+					"scale": 0
 				}
 			}
 		},
 		"animation.sg_crosshair.holding_others": {
 			"loop": true,
-			"animation_length": 0.5,
+			"animation_length": 3,
 			"override_previous_animation": true,
 			"bones": {
 				"linha1": {
@@ -116,12 +122,15 @@
 				},
 				"losangulo": {
 					"scale": 0
+				},
+				"equipar": {
+					"scale": 0
 				}
 			}
 		},
 		"animation.sg_crosshair.holding_pickaxe": {
 			"loop": true,
-			"animation_length": 1,
+			"animation_length": 3,
 			"override_previous_animation": true,
 			"bones": {
 				"linhas": {
@@ -155,6 +164,9 @@
 					}
 				},
 				"losangulo": {
+					"scale": 0
+				},
+				"equipar": {
 					"scale": 0
 				}
 			}
