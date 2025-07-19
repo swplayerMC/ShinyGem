@@ -72,15 +72,19 @@
             "dynamic_crosshair": "controller.animation.genfx_crosshairs",
             "crosshair_position_fix": "animation.sg_crosshair.inteiro",
             "c_main": "animation.sg_crosshair.main",
+            "c_main_attacking": "animation.sg_crosshair.main_attacking",
+            "c_main_controller": "controller.animation.main_crosshair",
             "c_holding_projectile": "animation.sg_crosshair.holding_projectile",
             "c_holding_pickaxe": "animation.sg_crosshair.holding_pickaxe",
             "c_holding_armor_piece": "animation.sg_crosshair.holding_armor_piece",
+            "c_holding_throwers": "animation.sg_crosshair.holding_throwers",
             "c_holding_others": "animation.sg_crosshair.holding_others"
         },
         "scripts": {
             "scale": "0.9375",
             //"variables": {},
             "initialize": [
+                "v.jump_reset_count = 0;",
                 "v.genfx_crosshair_geo = 0;",
                 "variable.is_holding_right = 0.0;",
                 "variable.is_blinking = 0.0;",
@@ -104,13 +108,13 @@
                 
                 "v.genfx_hprojectile = q.get_equipped_item_name == ('snowball') || q.get_equipped_item_name == ('egg') || q.get_equipped_item_name == ('ender_pearl') ? 1 : 0;",
                 
-                "v.genfx_hthrowables = q.get_equipped_item_name == ('bow') || q.get_equipped_item_name == ('crossbow') || q.get_equipped_item_name == ('trident') ? 1 : 0;",
+                "v.genfx_hthrowers = q.get_equipped_item_name == ('bow') || q.get_equipped_item_name == ('crossbow') || q.get_equipped_item_name == ('trident') ? 1 : 0;",
                 
                 "v.genfx_hnone = q.get_equipped_item_name == '' ? 1 : 0;",
 
                 "v.genfx_hothers = (!v.genfx_hpickaxe && !v.genfx_hprojectile) && (!v.genfx_hsword && !v.genfx_hnone && !v.genfx_harmor) ? 1 : 0;",
 
-                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || v.genfx_hthrowables ? 1 : 0;",
+                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || v.genfx_hthrowers ? 1 : 0;",
 
 
                 "variable.helmet_layer_visible = !query.has_head_gear;",
@@ -174,7 +178,7 @@
                 "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
             }
         ],
-        "min_engine_version": "1.18.20",
+        "min_engine_version": "1.10.0",
         "enable_attachables": true
         }
     }
