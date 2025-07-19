@@ -15,9 +15,9 @@
                 "a": 1.0
             },
             "is_hurt_color": {
-                "r": "v.genfx_vfx_jump_reset ? 0 : 1",
-                "g": "v.genfx_vfx_jump_reset ? 1 : 0",
-                "b": 0,
+                "r": "v.genfx_vfx_jump_reset ? 0 : 0.3;",
+                "g": "v.genfx_vfx_jump_reset ? 1 : 0.3",
+                "b": "v.genfx_vfx_jump_reset ? 0 : 0.3",
                 "a": 0.5
             },
             "filter_lighting": true,
