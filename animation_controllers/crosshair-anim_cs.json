@@ -5,12 +5,13 @@
 			"initial_state": "main",
 			"states": {
 				"main": {
-					"animations": ["c_main"],
+					"animations": ["c_main_controller"],
 					"transitions": [
 						{"holding_projectile": "v.genfx_hprojectile"},
 						{"holding_others": "v.genfx_hothers"},
 						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_armor_piece": "v.genfx_harmor"}
+						{"holding_armor_piece": "v.genfx_harmor"},
+						{"holding_throwers": "v.genfx_hthrowers"}
 					],
 					"blend_transition": 0.1
 				},
@@ -20,7 +21,8 @@
 						{"main": "!v.genfx_hprojectile"},
 						{"holding_others": "v.genfx_hothers"},
 						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_armor_piece": "v.genfx_harmor"}
+						{"holding_armor_piece": "v.genfx_harmor"},
+						{"holding_throwers": "v.genfx_hthrowers"}
 					],
 					"blend_transition": 0.2
 				},
@@ -30,7 +32,8 @@
 						{"main": "!v.genfx_hothers"},
 						{"holding_projectile": "v.genfx_hprojectile"},
 						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_armor_piece": "v.genfx_harmor"}
+						{"holding_armor_piece": "v.genfx_harmor"},
+						{"holding_throwers": "v.genfx_hthrowers"}
 					],
 					"blend_transition": 0.1
 				},
@@ -40,7 +43,8 @@
 						{"main": "!v.genfx_hpickaxe"},
 						{"holding_projectile": "v.genfx_hprojectile"},
 						{"holding_others": "v.genfx_hothers"},
-						{"holding_armor_piece": "v.genfx_harmor"}
+						{"holding_armor_piece": "v.genfx_harmor"},
+						{"holding_throwers": "v.genfx_hthrowers"}
 					],
 					"blend_transition": 0.1
 				},
@@ -50,9 +54,42 @@
 						{"main": "!v.genfx_harmor"},
 						{"holding_projectile": "v.genfx_hprojectile"},
 						{"holding_others": "v.genfx_hothers && !v.genfx_harmor"},
-						{"holding_pickaxe": "v.genfx_hpickaxe"}
+						{"holding_pickaxe": "v.genfx_hpickaxe"},
+						{"holding_throwers": "v.genfx_hthrowers"}
 					],
 					"blend_transition": 0.2
+				},
+				"holding_throwers": {
+					"animations": ["c_holding_throwers"],
+					"transitions": [
+						{"main": "!v.genfx_hthrowers"},
+						{"holding_projectile": "v.genfx_hprojectile"},
+						{"holding_others": "v.genfx_hothers && !v.genfx_hthrowers"},
+						{"holding_pickaxe": "v.genfx_hpickaxe"},
+						{"holding_armor_piece": "v.genfx_harmor"}
+					],
+					"blend_transition": 0.2
+				}
+			}
+		},
+		"controller.animation.main_crosshair": {
+			"initial_state": "default",
+			"states": {
+				"default": {
+					"animations": ["c_main"],
+					"transitions": [
+						{
+							"attacking": "v.attack_time > 0"
+						}
+					]
+				},
+				"attacking": {
+					"animations": ["c_main_attacking"],
+					"transitions": [
+						{
+							"default": "v.attack_time == 0 && q.all_animations_finished"
+						}
+					]
 				}
 			}
 		}

@@ -18,29 +18,36 @@
 				"linhas": {
 					"rotation": [0, 0, 45]
 				},
+				"quadrado": {
+					"scale": 0
+				},
+				"losangulo": {
+					"scale": 0
+				},
+				"equipar": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.sg_crosshair.main_attacking": {
+			"loop": true,
+			"animation_length": 2.0,
+			"override_previous_animation": true,
+			"bones": {
+				"linhas": {
+					"rotation": [0, 0, 45]
+				},
 				"linha1": {
-					"position": {
-						"0.0": [0, "v.attack_time > 0 ? -15", 0],
-						"3.0": [0, 0, 0]
-					}
+					"position": [0, -15, 0]
 				},
 				"linha2": {
-					"position": {
-						"0.0": ["v.attack_time > 0 ? 15", 0, 0],
-						"3.0": [0, 0, 0]
-					}
+					"position": [15, 0, 0]
 				},
 				"linha3": {
-					"position": {
-						"0.0": [0, "v.attack_time > 0 ? 15", 0],
-						"3.0": [0, 0, 0]
-					}
+					"position": [0, 15, 0]
 				},
 				"linha4": {
-					"position": {
-						"0.0": ["v.attack_time > 0 ? -15", 0, 0],
-						"3.0": [0, 0, 0]
-					}
+					"position": [-15, 0, 0]
 				},
 				"quadrado": {
 					"scale": 0
@@ -220,6 +227,32 @@
 					"scale": 0
 				},
 				"canto4": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.sg_crosshair.holding_throwers": {
+			"loop": true,
+			"bones": {
+				"linha1": {
+					"position": [0, "-20 + (q.get_animation_frame*6.5)", 0]
+				},
+				"linha2": {
+					"position": ["20 + (-q.get_animation_frame*6.5)", 0, 0]
+				},
+				"linha3": {
+					"position": [0, "20 + (-q.get_animation_frame*6.5)", 0]
+				},
+				"linha4": {
+					"position": ["-20 + (q.get_animation_frame*6.5)", 0, 0]
+				},
+				"quadrado": {
+					"scale": 0
+				},
+				"losangulo": {
+					"scale": 0
+				},
+				"equipar": {
 					"scale": 0
 				}
 			}
