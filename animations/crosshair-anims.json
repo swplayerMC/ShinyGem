@@ -123,6 +123,12 @@
 				"losangulo": {
 					"scale": 0
 				},
+				"quadrado": {
+					"scale": 1
+				},
+				"linhas": {
+					"scale": 1
+				},
 				"equipar": {
 					"scale": 0
 				}
@@ -140,29 +146,29 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": [0, 0, "q.target_x_rotation*3.7"]
+					"rotation": [0, 0, "v.player_x_rotation*30"]
 				},
 				"canto1": {
 					"position": {
-						"0.0": ["-v.attack_time*10", "v.attack_time*10", 0],
+						"0.0": ["-v.attack_time*30", "v.attack_time*30", 0],
 						"3.0": [0, 0, 0]
 					}
 				},
 				"canto2": {
 					"position": {
-						"0.0": ["v.attack_time*10", "v.attack_time*10", 0],
+						"0.0": ["v.attack_time*30", "v.attack_time*30", 0],
 						"3.0": [0, 0, 0]
 					}
 				},
 				"canto3": {
 					"position": {
-						"0.0": ["v.attack_time*10", "-v.attack_time*10", 0],
+						"0.0": ["v.attack_time*30", "-v.attack_time*30", 0],
 						"3.0": [0, 0, 0]
 					}
 				},
 				"canto4": {
 					"position": {
-						"0.0": ["-v.attack_time*10", "-v.attack_time*10", 0],
+						"0.0": ["-v.attack_time*30", "-v.attack_time*30", 0],
 						"3.0": [0, 0, 0]
 					}
 				},
@@ -170,6 +176,50 @@
 					"scale": 0
 				},
 				"equipar": {
+					"scale": 0
+				}
+			}
+		},
+		"animation.sg_crosshair.holding_armor_piece": {
+			"loop": true,
+			"bones": {
+				"equipar": {
+					"scale": 1
+				},
+				"losangulo": {
+					"scale": 0
+				},
+				"quadrado": {
+					"scale": 0
+				},
+				"linhas": {
+					"scale": 0
+				},
+				"centro": {
+					"scale": 0
+				},
+				"linha1": {
+					"scale": 0
+				},
+				"linha2": {
+					"scale": 0
+				},
+				"linha3": {
+					"scale": 0
+				},
+				"linha4": {
+					"scale": 0
+				},
+				"canto1": {
+					"scale": 0
+				},
+				"canto2": {
+					"scale": 0
+				},
+				"canto3": {
+					"scale": 0
+				},
+				"canto4": {
 					"scale": 0
 				}
 			}

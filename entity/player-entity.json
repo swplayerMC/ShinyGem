@@ -67,11 +67,14 @@
             "crawling.legs": "animation.player.crawl.legs",
             "holding_heavy_core": "animation.player.holding_heavy_core",
             "spawning": "animation.player.spawn_setup",
+            "afk_controller": "controller.animation.player.afk",
+            "afk_animation": "animation.player.afk",
             "dynamic_crosshair": "controller.animation.genfx_crosshairs",
             "crosshair_position_fix": "animation.sg_crosshair.inteiro",
             "c_main": "animation.sg_crosshair.main",
             "c_holding_projectile": "animation.sg_crosshair.holding_projectile",
             "c_holding_pickaxe": "animation.sg_crosshair.holding_pickaxe",
+            "c_holding_armor_piece": "animation.sg_crosshair.holding_armor_piece",
             "c_holding_others": "animation.sg_crosshair.holding_others"
         },
         "scripts": {
@@ -85,23 +88,27 @@
                 "variable.hand_bob = 0.0;"
             ], 
             "pre_animation": [
-                "v.genfx_attack = v.attack_time;",
+                //"t.rotation = Math.mod(360 + Math.mod(Math.atan2(query.position_delta(0), query.position_delta(2)) + query.head_y_rotation(0), 360), 360);",
 
-                "t.genfx_jreset_speed = q.ground_speed < 2 && q.vertical_speed > 1 ? 1 : 0;",
-
-                "v.genfx_vfx_jump_reset = q.is_jumping && (t.genfx_jreset_speed > 0) ? 1 : 0;",
+                "v.genfx_combo = 0; for_each(t.combo, v.attack_time > 0, {v.genfx_combo = v.genfx_combo + 1; return v.genfx_combo;});",
+                
+                "t.genfx_jreset_speed = q.ground_speed < 3 && q.vertical_speed > 1 ? 1 : 0;",
+                
+                "v.genfx_vfx_jump_reset = q.is_jumping && (t.genfx_jreset_speed) ? 1 : 0;",
+                
+                "v.genfx_harmor = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_armor') ? 1 : 0;",
 
                 "v.genfx_hsword = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
-
+                
                 "v.genfx_hpickaxe = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? 1 : 0;",
-
+                
                 "v.genfx_hprojectile = q.get_equipped_item_name == ('snowball') || q.get_equipped_item_name == ('egg') || q.get_equipped_item_name == ('ender_pearl') ? 1 : 0;",
-
+                
                 "v.genfx_hthrowables = q.get_equipped_item_name == ('bow') || q.get_equipped_item_name == ('crossbow') || q.get_equipped_item_name == ('trident') ? 1 : 0;",
-
+                
                 "v.genfx_hnone = q.get_equipped_item_name == '' ? 1 : 0;",
 
-                "v.genfx_hothers = (!v.genfx_hpickaxe && !v.genfx_hprojectile) && !v.genfx_hsword && !v.genfx_hnone ? 1 : 0;",
+                "v.genfx_hothers = (!v.genfx_hpickaxe && !v.genfx_hprojectile) && (!v.genfx_hsword && !v.genfx_hnone && !v.genfx_harmor) ? 1 : 0;",
 
                 "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || v.genfx_hthrowables ? 1 : 0;",
 
@@ -123,7 +130,8 @@
                 "crosshair_position_fix",
                 {
                     "spawning": "q.life_time < 0.9"
-                }
+                },
+                "afk_controller"
             ]
         },
         //"particle_effects": { "sname": "identifier" },
