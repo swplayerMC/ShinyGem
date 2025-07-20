@@ -69,6 +69,8 @@
             "spawning": "animation.player.spawn_setup",
             "afk_controller": "controller.animation.player.afk",
             "afk_animation": "animation.player.afk",
+            "got_a_combo": "animation.player.got_a_combo",
+            "combo": "controller.animation.player.combo",
             "dynamic_crosshair": "controller.animation.genfx_crosshairs",
             "crosshair_position_fix": "animation.sg_crosshair.inteiro",
             "c_main": "animation.sg_crosshair.main",
@@ -78,14 +80,18 @@
             "c_holding_pickaxe": "animation.sg_crosshair.holding_pickaxe",
             "c_holding_armor_piece": "animation.sg_crosshair.holding_armor_piece",
             "c_holding_throwers": "animation.sg_crosshair.holding_throwers",
-            "c_holding_others": "animation.sg_crosshair.holding_others"
+            "c_holding_others": "animation.sg_crosshair.holding_others",
+            "zuera": "animation.player.zuera"
         },
         "scripts": {
+            //"scale": "3.0",
             "scale": "0.9375",
             //"variables": {},
             "initialize": [
                 "v.jump_reset_count = 0;",
+                "v.genfx_combo = 0;",
                 "v.genfx_crosshair_geo = 0;",
+                "v.hurt = 0;",
                 "variable.is_holding_right = 0.0;",
                 "variable.is_blinking = 0.0;",
                 "variable.last_blink_time = 0.0;",
@@ -93,8 +99,6 @@
             ], 
             "pre_animation": [
                 //"t.rotation = Math.mod(360 + Math.mod(Math.atan2(query.position_delta(0), query.position_delta(2)) + query.head_y_rotation(0), 360), 360);",
-
-                "v.genfx_combo = 0; for_each(t.combo, v.attack_time > 0, {v.genfx_combo = v.genfx_combo + 1; return v.genfx_combo;});",
                 
                 "t.genfx_jreset_speed = q.ground_speed < 3 && q.vertical_speed > 1 ? 1 : 0;",
                 
@@ -135,11 +139,15 @@
                 {
                     "spawning": "q.life_time < 0.9"
                 },
-                "afk_controller"
+                "afk_controller",
+                "combo",
+                "zuera"
             ]
         },
         //"particle_effects": { "sname": "identifier" },
-        //"sound_effects": { "sname": "event-identifier"},
+        "sound_effects": { 
+            "combo_coin_sfx": "generatefx.sound_effects.player_combo"
+        },
         "materials": {
             "default": "entity_alphatest",
             "cape": "entity_alphatest",
@@ -173,6 +181,9 @@
             },
             {
                 "controller.render.player.map": "variable.map_face_icon"
+            },
+            {
+                "controller.render.player_combo": "!t.is_local_player"
             },
             {
                 "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
