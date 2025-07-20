@@ -31,7 +31,7 @@
 		},
 		"animation.sg_crosshair.main_attacking": {
 			"loop": true,
-			"animation_length": 2.0,
+			"animation_length": 0.7,
 			"override_previous_animation": true,
 			"bones": {
 				"linhas": {

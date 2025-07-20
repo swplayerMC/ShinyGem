@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18.20",
+    "format_version": "1.10.0",
     "render_controllers": {
         "controller.render.sg_crosshair": {
             "geometry": "Geometry.crosshair",
@@ -18,7 +18,7 @@
                 "r": "v.genfx_vfx_jump_reset ? 0 : 0.3;",
                 "g": "v.genfx_vfx_jump_reset ? {1; v.jump_reset_count = v.jump_reset_count + 1; return v.jump_reset_count;} : 0.3;",
                 "b": "v.genfx_vfx_jump_reset ? 0 : 0.3",
-                "a": 1.0
+                "a": "1; v.hurt = 1; return v.hurt;"
             },
             "filter_lighting": true,
             "ignore_lighting": true,

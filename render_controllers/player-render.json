@@ -1,0 +1,17 @@
+{
+    "format_version": "1.10.0",
+    "render_controllers": {
+        "controller.render.player_combo": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "Material.default"
+                }
+            ],
+            "textures": [ "Texture.default" ],
+            "is_hurt_color": {
+                "a": "0; v.genfx_combo = v.genfx_combo + 1; return v.genfx_combo;"
+            }
+        }
+    }
+}
