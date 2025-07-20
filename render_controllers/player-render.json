@@ -10,7 +10,7 @@
             ],
             "textures": [ "Texture.default" ],
             "is_hurt_color": {
-                "a": "0; v.genfx_combo = v.genfx_combo + 1; return v.genfx_combo;"
+                "a": "0; v.genfx_combo = v.genfx_combo + 1; v.hurt = 1; return v.genfx_combo;"
             }
         }
     }
