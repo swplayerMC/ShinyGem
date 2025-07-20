@@ -183,7 +183,7 @@
                 "controller.render.player.map": "variable.map_face_icon"
             },
             {
-                "controller.render.player_combo": "!t.is_local_player"
+                "controller.render.player_combo": "!v.is_first_person"
             },
             {
                 "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
