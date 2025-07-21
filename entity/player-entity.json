@@ -5,8 +5,7 @@
         "identifier": "minecraft:player",
         "animations": {
             "spawning": "animation.player.spawn_setup",
-            "afk_controller": "controller.animation.player.afk",
-            "afk_animation": "animation.player.afk",
+            "afk_animation1": "animation.player.afk",
             "got_a_combo": "animation.player.got_a_combo",
             "combo": "controller.animation.player.combo",
             "dynamic_crosshair": "controller.animation.genfx_crosshairs",
