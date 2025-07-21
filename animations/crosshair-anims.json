@@ -29,7 +29,7 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.main_attacking": {
+		"animation.sg_crosshair.principal_atacando": {
 			"loop": true,
 			"animation_length": 0.7,
 			"override_previous_animation": true,
@@ -60,7 +60,7 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.holding_projectile": {
+		"animation.sg_crosshair.segurando_projetil": {
 			"loop": true,
 			"animation_length": 0.25,
 			"override_previous_animation": true,
@@ -82,7 +82,7 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.holding_others": {
+		"animation.sg_crosshair.segurando_outros": {
 			"loop": true,
 			"animation_length": 3,
 			"override_previous_animation": true,
@@ -141,7 +141,7 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.holding_pickaxe": {
+		"animation.sg_crosshair.segurando_picareta": {
 			"loop": true,
 			"animation_length": 3,
 			"override_previous_animation": true,
@@ -187,7 +187,7 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.holding_armor_piece": {
+		"animation.sg_crosshair.segurando_armaduras": {
 			"loop": true,
 			"bones": {
 				"equipar": {
@@ -231,7 +231,7 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.holding_throwers": {
+		"animation.sg_crosshair.segurando_lançadores": {
 			"loop": true,
 			"bones": {
 				"linha1": {

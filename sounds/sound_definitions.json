@@ -93,38 +93,38 @@
         "min_distance": null,
         "sounds": [
             {
-                "name": "sounds/effects/got_a_combo",
+                "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.6,
                 "volume": 10.0
             },
             {
-                "name": "sounds/effects/got_a_combo",
+                "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.4,
                 "volume": 10.0
             },
             {
-                "name": "sounds/effects/got_a_combo",
+                "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.2,
                 "volume": 10.0
             },
             {
                 "load_on_low_memory": true,
-                "name": "sounds/effects/got_a_combo",
+                "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.0,
                 "volume": 10.0
             },
             {
-                "name": "sounds/effects/got_a_combo",
+                "name": "sounds/effects/pegou_um_combo",
                 "pitch": 0.8,
                 "volume": 10.0
             },
             {
-                "name": "sounds/effects/got_a_combo",
+                "name": "sounds/effects/pegou_um_combo",
                 "pitch": 0.6,
                 "volume": 10.0
             },
             {
-                "name": "sounds/effects/got_a_combo",
+                "name": "sounds/effects/pegou_um_combo",
                 "pitch": 0.4,
                 "volume": 10.0
             }

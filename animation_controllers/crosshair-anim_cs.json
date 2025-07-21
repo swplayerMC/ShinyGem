@@ -5,68 +5,68 @@
 			"initial_state": "main",
 			"states": {
 				"main": {
-					"animations": ["c_main_controller"],
+					"animations": ["mira_principal_controle"],
 					"transitions": [
-						{"holding_projectile": "v.genfx_hprojectile"},
-						{"holding_others": "v.genfx_hothers"},
-						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_armor_piece": "v.genfx_harmor"},
-						{"holding_throwers": "v.genfx_hthrowers"}
+						{"segurando_projetil": "v.genfx_s_projetil"},
+						{"segurando_outros": "v.genfx_s_outros"},
+						{"segurando_picareta": "v.genfx_s_picareta"},
+						{"segurando_armaduras": "v.genfx_s_armadura"},
+						{"segurando_lançadores": "v.genfx_s_lançadores"}
 					],
 					"blend_transition": 0.1
 				},
-				"holding_projectile": {
-					"animations": ["c_holding_projectile"],
+				"segurando_projetil": {
+					"animations": ["mira_segurando_projetil"],
 					"transitions": [
-						{"main": "!v.genfx_hprojectile"},
-						{"holding_others": "v.genfx_hothers"},
-						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_armor_piece": "v.genfx_harmor"},
-						{"holding_throwers": "v.genfx_hthrowers"}
+						{"main": "!v.genfx_s_projetil"},
+						{"segurando_outros": "v.genfx_s_outros"},
+						{"segurando_picareta": "v.genfx_s_picareta"},
+						{"segurando_armaduras": "v.genfx_s_armadura"},
+						{"segurando_lançadores": "v.genfx_s_lançadores"}
 					],
 					"blend_transition": 0.2
 				},
-				"holding_others": {
-					"animations": ["c_holding_others"],
+				"segurando_outros": {
+					"animations": ["mira_segurando_outros"],
 					"transitions": [
-						{"main": "!v.genfx_hothers"},
-						{"holding_projectile": "v.genfx_hprojectile"},
-						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_armor_piece": "v.genfx_harmor"},
-						{"holding_throwers": "v.genfx_hthrowers"}
+						{"main": "!v.genfx_s_outros"},
+						{"segurando_projetil": "v.genfx_s_projetil"},
+						{"segurando_picareta": "v.genfx_s_picareta"},
+						{"segurando_armaduras": "v.genfx_s_armadura"},
+						{"segurando_lançadores": "v.genfx_s_lançadores"}
 					],
 					"blend_transition": 0.1
 				},
-				"holding_pickaxe": {
-					"animations": ["c_holding_pickaxe"],
+				"segurando_picareta": {
+					"animations": ["mira_segurando_picareta"],
 					"transitions": [
-						{"main": "!v.genfx_hpickaxe"},
-						{"holding_projectile": "v.genfx_hprojectile"},
-						{"holding_others": "v.genfx_hothers"},
-						{"holding_armor_piece": "v.genfx_harmor"},
-						{"holding_throwers": "v.genfx_hthrowers"}
+						{"main": "!v.genfx_s_picareta"},
+						{"segurando_projetil": "v.genfx_s_projetil"},
+						{"segurando_outros": "v.genfx_s_outros"},
+						{"segurando_armaduras": "v.genfx_s_armadura"},
+						{"segurando_lançadores": "v.genfx_s_lançadores"}
 					],
 					"blend_transition": 0.1
 				},
-				"holding_armor_piece": {
-					"animations": ["c_holding_armor_piece"],
+				"segurando_armaduras": {
+					"animations": ["mira_segurando_armadura"],
 					"transitions": [
-						{"main": "!v.genfx_harmor"},
-						{"holding_projectile": "v.genfx_hprojectile"},
-						{"holding_others": "v.genfx_hothers && !v.genfx_harmor"},
-						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_throwers": "v.genfx_hthrowers"}
+						{"main": "!v.genfx_s_armadura"},
+						{"segurando_projetil": "v.genfx_s_projetil"},
+						{"segurando_outros": "v.genfx_s_outros && !v.genfx_s_armadura"},
+						{"segurando_picareta": "v.genfx_s_picareta"},
+						{"segurando_lançadores": "v.genfx_s_lançadores"}
 					],
 					"blend_transition": 0.2
 				},
-				"holding_throwers": {
-					"animations": ["c_holding_throwers"],
+				"segurando_lançadores": {
+					"animations": ["mira_segurando_lançadores"],
 					"transitions": [
-						{"main": "!v.genfx_hthrowers"},
-						{"holding_projectile": "v.genfx_hprojectile"},
-						{"holding_others": "v.genfx_hothers && !v.genfx_hthrowers"},
-						{"holding_pickaxe": "v.genfx_hpickaxe"},
-						{"holding_armor_piece": "v.genfx_harmor"}
+						{"main": "!v.genfx_s_lançadores"},
+						{"segurando_projetil": "v.genfx_s_projetil"},
+						{"segurando_outros": "v.genfx_s_outros && !v.genfx_s_lançadores"},
+						{"segurando_picareta": "v.genfx_s_picareta"},
+						{"segurando_armaduras": "v.genfx_s_armadura"}
 					],
 					"blend_transition": 0.2
 				}
@@ -76,7 +76,7 @@
 			"initial_state": "default",
 			"states": {
 				"default": {
-					"animations": ["c_main"],
+					"animations": ["mira_principal"],
 					"transitions": [
 						{
 							"attacking": "v.attack_time > 0"
@@ -84,7 +84,7 @@
 					]
 				},
 				"attacking": {
-					"animations": ["c_main_attacking"],
+					"animations": ["mira_principal_atacando"],
 					"transitions": [
 						{
 							"default": "v.attack_time == 0 && q.all_animations_finished"

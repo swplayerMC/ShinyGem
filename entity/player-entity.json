@@ -1,23 +1,25 @@
 {
-    "format_version": "1.18.20",
+    "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
         "identifier": "minecraft:player",
         "animations": {
-            "spawning": "animation.player.spawn_setup",
-            "afk_animation1": "animation.player.afk",
-            "got_a_combo": "animation.player.got_a_combo",
+            "raiz": "controller.animation.player.raiz",
+            "spawnando": "animation.player.spawn_setup",
+            "andando": "animation.player.andando",
+            "afk1": "animation.player.afk",
+            "pegou_um_combo": "animation.player.pegou_um_combo",
             "combo": "controller.animation.player.combo",
-            "dynamic_crosshair": "controller.animation.genfx_crosshairs",
-            "crosshair_position_fix": "animation.sg_crosshair.inteiro",
-            "c_main": "animation.sg_crosshair.main",
-            "c_main_attacking": "animation.sg_crosshair.main_attacking",
-            "c_main_controller": "controller.animation.main_crosshair",
-            "c_holding_projectile": "animation.sg_crosshair.holding_projectile",
-            "c_holding_pickaxe": "animation.sg_crosshair.holding_pickaxe",
-            "c_holding_armor_piece": "animation.sg_crosshair.holding_armor_piece",
-            "c_holding_throwers": "animation.sg_crosshair.holding_throwers",
-            "c_holding_others": "animation.sg_crosshair.holding_others",
+            "mira_dinamica": "controller.animation.genfx_crosshairs",
+            "fixar_mira": "animation.sg_crosshair.inteiro",
+            "mira_principal": "animation.sg_crosshair.main",
+            "mira_principal_atacando": "animation.sg_crosshair.principal_atacando",
+            "mira_principal_controle": "controller.animation.main_crosshair",
+            "mira_segurando_projetil": "animation.sg_crosshair.segurando_projetil",
+            "mira_segurando_picareta": "animation.sg_crosshair.segurando_picareta",
+            "mira_segurando_armadura": "animation.sg_crosshair.segurando_armaduras",
+            "mira_segurando_lançadores": "animation.sg_crosshair.segurando_lançadores",
+            "mira_segurando_outros": "animation.sg_crosshair.segurando_outros",
             "scripts": "animation.player.scripts",
             "zuera": "animation.player.zuera"
         },
@@ -30,35 +32,36 @@
                 "v.genfx_combo = 0;",
                 "v.genfx_crosshair_geo = 0;",
                 "v.hurt = 0;",
-                "variable.is_holding_right = 0.0;",
-                "variable.is_blinking = 0.0;",
-                "variable.last_blink_time = 0.0;",
-                "variable.hand_bob = 0.0;"
+                "v.mao_direita_ocupada = 0;",
+                "v.piscando = 0;",
+                "v.ultima_piscada = 0;"
             ], 
             "pre_animation": [
                 //"t.rotation = Math.mod(360 + Math.mod(Math.atan2(query.position_delta(0), query.position_delta(2)) + query.head_y_rotation(0), 360), 360);",
                 
                 //"t.is_local_player -> q.is_local_player",
 
+                "v.velocidade = q.ground_speed - q.vertical_speed",
+
                 "t.genfx_jreset_speed = q.ground_speed < 3 && q.vertical_speed > 1 ? 1 : 0;",
                 
                 "v.genfx_vfx_jump_reset = q.is_jumping && (t.genfx_jreset_speed) ? 1 : 0;",
                 
-                "v.genfx_harmor = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_armor') ? 1 : 0;",
+                "v.genfx_s_armadura = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_armadura') ? 1 : 0;",
 
-                "v.genfx_hsword = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
+                "v.genfx_s_espada = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
                 
-                "v.genfx_hpickaxe = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? 1 : 0;",
+                "v.genfx_s_picareta = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_picareta') ? 1 : 0;",
                 
-                "v.genfx_hprojectile = q.get_equipped_item_name == ('snowball') || q.get_equipped_item_name == ('egg') || q.get_equipped_item_name == ('ender_pearl') ? 1 : 0;",
+                "v.genfx_s_projetil = q.get_equipped_item_name == ('snowball') || q.get_equipped_item_name == ('egg') || q.get_equipped_item_name == ('ender_pearl') ? 1 : 0;",
                 
-                "v.genfx_hthrowers = q.get_equipped_item_name == ('bow') || q.get_equipped_item_name == ('crossbow') || q.get_equipped_item_name == ('trident') ? 1 : 0;",
+                "v.genfx_s_lançadores = q.get_equipped_item_name == ('bow') || q.get_equipped_item_name == ('crossbow') || q.get_equipped_item_name == ('trident') ? 1 : 0;",
                 
-                "v.genfx_hnone = q.get_equipped_item_name == '' ? 1 : 0;",
+                "v.genfx_s_nada = q.get_equipped_item_name == '' ? 1 : 0;",
 
-                "v.genfx_hothers = (!v.genfx_hpickaxe && !v.genfx_hprojectile) && (!v.genfx_hsword && !v.genfx_hnone && !v.genfx_harmor) ? 1 : 0;",
+                "v.genfx_s_outros = (!v.genfx_s_picareta && !v.genfx_s_projetil) && (!v.genfx_s_espada && !v.genfx_s_nada && !v.genfx_s_armadura) ? 1 : 0;",
 
-                "v.genfx_standby = q.ground_speed > 0 || v.genfx_hprojectile || v.genfx_hpickaxe || v.genfx_hthrowers ? 1 : 0;",
+                "v.genfx_standby = q.ground_speed > 0 || v.genfx_s_projetil || v.genfx_s_picareta || v.genfx_s_lançadores ? 1 : 0;",
 
 
                 "variable.helmet_layer_visible = !query.has_head_gear;",
@@ -74,10 +77,10 @@
             ],
             "animate": [
 
-                "dynamic_crosshair",
-                "crosshair_position_fix",
+                "mira_dinamica",
+                "fixar_mira",
                 {
-                    "spawning": "q.life_time < 0.9"
+                    "spawnando": "q.life_time < 0.9"
                 },
                 "afk_controller",
                 "combo",

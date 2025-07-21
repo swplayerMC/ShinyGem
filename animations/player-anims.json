@@ -168,7 +168,7 @@
 				}
 			}
 		},
-		"animation.player.got_a_combo": {
+		"animation.player.pegou_um_combo": {
 			"loop": true,
 			"sound_effects": {
 				"0.0": {
