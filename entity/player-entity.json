@@ -1,5 +1,5 @@
 {
-    "format_version": "1.18.20",
+    "format_version": "1.10.0",
     "minecraft:client_entity": {
         "description": {
         "identifier": "minecraft:player",
@@ -106,11 +106,11 @@
                 
                 "v.genfx_vfx_jump_reset = q.is_jumping && (t.genfx_jreset_speed) ? 1 : 0;",
                 
-                "v.genfx_s_armadura = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_armadura') ? 1 : 0;",
+                "v.genfx_s_armadura = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_armor') ? 1 : 0;",
 
                 "v.genfx_s_espada = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
                 
-                "v.genfx_s_picareta = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_picareta') ? 1 : 0;",
+                "v.genfx_s_picareta = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? 1 : 0;",
                 
                 "v.genfx_s_projetil = q.get_equipped_item_name == ('snowball') || q.get_equipped_item_name == ('egg') || q.get_equipped_item_name == ('ender_pearl') ? 1 : 0;",
                 
