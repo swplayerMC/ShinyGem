@@ -8,4 +8,5 @@ Shizuku (i used it to be able to navigate in com.mojang folder on my phone)
 Grok (was a very useful tool, i learned a lot of things with it... it's an A.I.)
 Termux (to use GitHub on mobile)
 PhotoShop (the pack icon image was made with it)
-And of course, Minecraft
+And of course, Minecraft 
+Oh, and by the way, i did unlock the game's root folder (C:\Program Files\WindowsApps\Microsoft.MinecraftUWP_<the_actual_game_version>.0_x64__8wekyb3d8bbwe\data\ <-- inside this folder there are a lot of other folders, including the 'resource_packs' and 'behaviour_packs' folders. They have every single vanilla source, from all the versions) but there is a better option: download an APK (better be the latest version of the public... not beta/preview ones. And the sources will be inside an 'assets' folder in the root of the APK file, probably)
