@@ -1,0 +1,43 @@
+{
+  "entity_sounds": {
+    "entities": {
+      "happy_ghast": {
+        "volume": 1.0,
+        "pitch": 1.0,
+        "events": {
+          "death": "mob.happy_ghast.death",
+          "hurt": "mob.happy_ghast.hurt",
+          "ambient": "mob.happy_ghast.ambient",
+          "armor.equip_generic": "mob.happy_ghast.harness_equip",
+          "armor.unequip_generic": "mob.happy_ghast.harness_unequip",
+          "attach": "mob.happy_ghast.goggles_down",
+          "detach": "mob.happy_ghast.goggles_up"
+        },
+        "variants": {
+          "key": "query.is_baby ? 'ghastling' : 'adult'",
+          "map": {
+            "ghastling": {
+              "volume": 1.0,
+              "pitch": 0.5,
+              "events": {
+                "spawn": "mob.ghastling.spawn",
+                "death": "mob.ghastling.death",
+                "hurt": "mob.ghastling.hurt",
+                "ambient": "mob.ghastling.ambient"
+              }
+            },
+            "adult": {
+              "volume": 1.0,
+              "pitch": 1.0,
+              "events": {
+                "death": "mob.happy_ghast.death",
+                "hurt": "mob.happy_ghast.hurt",
+                "ambient": "mob.happy_ghast.ambient"
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
