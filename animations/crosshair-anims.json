@@ -6,7 +6,7 @@
 			"bones": {
 				"crosshair": {
 					"rotation": [0, 0, 0],
-					"position": [0, 0, 200]
+					"position": [0, 0, "v.is_first_person ? 200 : -200"]
 				}
 			}
 		},
@@ -153,7 +153,7 @@
 					"relative_to": {
 						"rotation": "entity"
 					},
-					"rotation": [0, 0, "v.player_x_rotation*30"]
+					"rotation": [0, 0, "t.rot*30"]
 				},
 				"canto1": {
 					"position": {
@@ -231,7 +231,7 @@
 				}
 			}
 		},
-		"animation.sg_crosshair.segurando_lançadores": {
+		"animation.sg_crosshair.segurando_lancadores": {
 			"loop": true,
 			"bones": {
 				"linha1": {

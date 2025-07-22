@@ -18,6 +18,18 @@
     "metadata": {
         "authors": [ "@swplayerMC", "@Calebe-GenerateFX" ]
     },
+    "subpacks": [
+        {
+            "folder_name": "anims-from-zero",
+            "name": "Minhas animações (feitas do zero)",
+            "memory_tier": 2
+        },
+        {
+            "folder_name": "no-break",
+            "name": "Com animações vanilla",
+            "memory_tier": 1
+        }
+    ],
     "settings": [
         {
             "type": "label",

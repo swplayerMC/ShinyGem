@@ -1,6 +1,43 @@
 {
     "format_version": "1.10.0",
     "render_controllers": {
+        "controller.render.player": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "q.is_spectator ? Material.spectator : Material.default"
+                }
+            ],
+            "textures": [
+                "Texture.default"
+            ],
+            "part_visibility": [
+                {
+                    "*": "v.is_first_person || q.is_spectator ? 0 : 1"
+                },
+                {
+                    "head": "!v.is_first_person || q.is_spectator"
+                },
+                {
+                    "hat": "!v.is_first_person || q.is_spectator"
+                },
+                {
+                    "helmet": "!v.is_first_person || q.is_spectator"
+                },
+                {
+                    "rightArm": "!q.is_spectator"
+                },
+                {
+                    "leftArm": "!q.is_spectator"
+                }
+            ],
+            "color": {
+                "r": "1.0f",
+                "g": "1.0f",
+                "b": "1.0f",
+                "a": "q.is_spectator ? 0.3 : 1"
+            }
+        },
         "controller.render.player_combo": {
             "geometry": "Geometry.default",
             "materials": [

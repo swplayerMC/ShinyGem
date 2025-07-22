@@ -11,7 +11,7 @@
 						{"segurando_outros": "v.genfx_s_outros"},
 						{"segurando_picareta": "v.genfx_s_picareta"},
 						{"segurando_armaduras": "v.genfx_s_armadura"},
-						{"segurando_lançadores": "v.genfx_s_lançadores"}
+						{"segurando_lancadores": "v.genfx_s_lancadores"}
 					],
 					"blend_transition": 0.1
 				},
@@ -22,7 +22,7 @@
 						{"segurando_outros": "v.genfx_s_outros"},
 						{"segurando_picareta": "v.genfx_s_picareta"},
 						{"segurando_armaduras": "v.genfx_s_armadura"},
-						{"segurando_lançadores": "v.genfx_s_lançadores"}
+						{"segurando_lancadores": "v.genfx_s_lancadores"}
 					],
 					"blend_transition": 0.2
 				},
@@ -33,7 +33,7 @@
 						{"segurando_projetil": "v.genfx_s_projetil"},
 						{"segurando_picareta": "v.genfx_s_picareta"},
 						{"segurando_armaduras": "v.genfx_s_armadura"},
-						{"segurando_lançadores": "v.genfx_s_lançadores"}
+						{"segurando_lancadores": "v.genfx_s_lancadores"}
 					],
 					"blend_transition": 0.1
 				},
@@ -44,7 +44,7 @@
 						{"segurando_projetil": "v.genfx_s_projetil"},
 						{"segurando_outros": "v.genfx_s_outros"},
 						{"segurando_armaduras": "v.genfx_s_armadura"},
-						{"segurando_lançadores": "v.genfx_s_lançadores"}
+						{"segurando_lancadores": "v.genfx_s_lancadores"}
 					],
 					"blend_transition": 0.1
 				},
@@ -55,16 +55,16 @@
 						{"segurando_projetil": "v.genfx_s_projetil"},
 						{"segurando_outros": "v.genfx_s_outros && !v.genfx_s_armadura"},
 						{"segurando_picareta": "v.genfx_s_picareta"},
-						{"segurando_lançadores": "v.genfx_s_lançadores"}
+						{"segurando_lancadores": "v.genfx_s_lancadores"}
 					],
 					"blend_transition": 0.2
 				},
-				"segurando_lançadores": {
-					"animations": ["mira_segurando_lançadores"],
+				"segurando_lancadores": {
+					"animations": ["mira_segurando_lancadores"],
 					"transitions": [
-						{"main": "!v.genfx_s_lançadores"},
+						{"main": "!v.genfx_s_lancadores"},
 						{"segurando_projetil": "v.genfx_s_projetil"},
-						{"segurando_outros": "v.genfx_s_outros && !v.genfx_s_lançadores"},
+						{"segurando_outros": "v.genfx_s_outros && !v.genfx_s_lancadores"},
 						{"segurando_picareta": "v.genfx_s_picareta"},
 						{"segurando_armaduras": "v.genfx_s_armadura"}
 					],

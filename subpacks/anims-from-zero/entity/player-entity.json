@@ -1,0 +1,133 @@
+{
+    "format_version": "1.10.0",
+    "minecraft:client_entity": {
+        "description": {
+        "identifier": "minecraft:player",
+        "animations": {
+            "raiz": "controller.animation.player.raiz",
+            "scripts": "animation.player.scripts",
+            "camera": "animation.player.camera_fix",
+            "movimentacao": "controller.animation.player.3p_movimentos",
+            "se_afk": "controller.animation.player.afk",
+            "pegou_um_combo": "animation.player.pegou_um_combo",
+            "combo": "controller.animation.player.combo",
+            "1p_parado": "animation.player.1p",
+            "3p_afk1": "animation.player.3p_afk1",
+            "3p_parado": "animation.player.3p_parado",
+            "3p_agachado": "animation.player.3p_agachado",
+            "3p_andando_agachado": "animation.player.3p_andando_agachado",
+            "3p_spawnando": "animation.player.3p_spawn_setup",
+            "mira_dinamica": "controller.animation.genfx_crosshairs",
+            "fixar_mira": "animation.sg_crosshair.inteiro",
+            "mira_principal": "animation.sg_crosshair.main",
+            "mira_principal_atacando": "animation.sg_crosshair.principal_atacando",
+            "mira_principal_controle": "controller.animation.main_crosshair",
+            "mira_segurando_projetil": "animation.sg_crosshair.segurando_projetil",
+            "mira_segurando_picareta": "animation.sg_crosshair.segurando_picareta",
+            "mira_segurando_armadura": "animation.sg_crosshair.segurando_armaduras",
+            "mira_segurando_lancadores": "animation.sg_crosshair.segurando_lancadores",
+            "mira_segurando_outros": "animation.sg_crosshair.segurando_outros"
+        },
+        "scripts": {
+            //"scale": "3.0",
+            "scale": "0.9375",
+            //"variables": {},
+            "initialize": [
+                "v.velocidade = 0;",
+                "v.jump_reset_count = 0;",
+                "v.genfx_combo = 0;",
+                "v.genfx_crosshair_geo = 0;",
+                "v.hurt = 0;",
+                "v.mao_direita_ocupada = 0;",
+                "v.is_blinking = 0;",
+                "v.ultima_piscada = 0;"
+            ], 
+            "pre_animation": [
+                //"t.rotation = Math.mod(360 + Math.mod(Math.atan2(query.position_delta(0), query.position_delta(2)) + query.head_y_rotation(0), 360), 360);",
+
+                //"t.is_local_player -> q.is_local_player",
+
+                "t.rot = q.target_y_rotation;",
+
+                "v.velocidade = !q.is_jumping && !q.is_sprinting && q.is_on_ground ? q.ground_speed - q.vertical_speed;",
+
+                "t.genfx_jreset_speed = q.ground_speed < 3 && q.vertical_speed > 1 ? 1 : 0;",
+                
+                "v.genfx_vfx_jump_reset = q.is_jumping && (t.genfx_jreset_speed) ? 1 : 0;",
+                
+                "v.genfx_s_armadura = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_armor') ? 1 : 0;",
+
+                "v.genfx_s_espada = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
+                
+                "v.genfx_s_picareta = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_pickaxe') ? 1 : 0;",
+                
+                "v.genfx_s_projetil = q.get_equipped_item_name == ('snowball') || q.get_equipped_item_name == ('egg') || q.get_equipped_item_name == ('ender_pearl') ? 1 : 0;",
+                
+                "v.genfx_s_lancadores = q.get_equipped_item_name == ('bow') || q.get_equipped_item_name == ('crossbow') || q.get_equipped_item_name == ('trident') ? 1 : 0;",
+                
+                "v.genfx_s_nada = q.get_equipped_item_name == '' ? 1 : 0;",
+
+                "v.genfx_s_outros = (!v.genfx_s_picareta && !v.genfx_s_projetil) && (!v.genfx_s_espada && !v.genfx_s_nada && !v.genfx_s_armadura) ? 1 : 0;",
+
+                "v.genfx_standby = q.ground_speed > 0 || v.genfx_s_projetil || v.genfx_s_picareta || v.genfx_s_lancadores ? 1 : 0;",
+
+
+                "variable.helmet_layer_visible = !query.has_head_gear;",
+                "variable.leg_layer_visible = 1.0;",
+                "variable.boot_layer_visible = 1.0;",
+                "variable.chest_layer_visible = 1.0;",
+                "variable.attack_body_rot_y = Math.sin(360*Math.sqrt(variable.attack_time)) * 5.0;",
+                "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;",
+                "variable.first_person_rotation_factor = math.sin((1 - variable.attack_time) * 180.0);",
+                //"variable.hand_bob = query.life_time < 0.01 ? 0.0 : variable.hand_bob + ((query.is_on_ground && query.is_alive ? math.clamp(math.sqrt(math.pow(query.position_delta(0), 2.0) + math.pow(query.position_delta(2), 2.0)), 0.0, 0.1) : 0.0) - variable.hand_bob) * 0.02;",
+                "variable.map_angle = math.clamp(1 - variable.player_x_rotation / 45.1, 0.0, 1.0);",
+                "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
+            ],
+            "animate": [
+                "raiz",
+                "mira_dinamica",
+                "fixar_mira",
+                {
+                    "3p_spawnando": "q.life_time < 0.9"
+                },
+                "combo",
+                "scripts"
+            ]
+        },
+        //"particle_effects": { "sname": "identifier" },
+        "sound_effects": { 
+            "combo_coin_sfx": "generatefx.sound_effects.player_combo"
+        },
+        "materials": {
+            "default": "entity_alphatest",
+            "cape": "entity_alphatest",
+            "animated": "player_animated",
+            "spectator": "player_spectator",
+            "crosshair": "entity"
+        },
+        "textures": {
+            "default": "textures/entity/steve",
+            "cape": "textures/entity/cape_invisible",
+            "crosshair": "images/models/crosshair",
+            "crosshair_red": "images/models/crosshair_red"
+        },
+        "geometry": {
+            "default": "geometry.humanoid.custom",
+            "cape": "geometry.cape",
+            "crosshair": "geometry.sg_crosshair"
+        },
+        "render_controllers": [
+            "controller.render.player",
+            {
+                "controller.render.player.map": "variable.map_face_icon"
+            },
+            //"controller.render.player_combo",
+            {
+                "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
+            }
+        ],
+        "min_engine_version": "1.10.0",
+        "enable_attachables": true
+        }
+    }
+}
