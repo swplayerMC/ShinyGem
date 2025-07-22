@@ -1,18 +1,4 @@
 {
-    "game.player.attack.nodamage" : {
-        "__use_legacy_max_distance" : "true",
-        "category" : "player",
-        "max_distance" : null,
-        "min_distance" : null,
-        "sounds" : []
-    },
-    "game.player.attack.strong" : {
-        "__use_legacy_max_distance" : "true",
-        "category" : "player",
-        "max_distance" : null,
-        "min_distance" : null,
-        "sounds" : []
-    },
     "game.player.die" : {
         "__use_legacy_max_distance" : "true",
         "category" : "player",

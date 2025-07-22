@@ -1,0 +1,2253 @@
+{
+    "individual_event_sounds": {
+        "events": {
+            "beacon.activate": {
+                "sound": "beacon.activate",
+                "volume": 1,
+                "pitch": 1
+            },
+            "beacon.ambient": {
+                "sound": "beacon.ambient",
+                "volume": 1,
+                "pitch": 1
+            },
+            "beacon.deactivate": {
+                "sound": "beacon.deactivate",
+                "volume": 1,
+                "pitch": 1
+            },
+            "beacon.power": {
+                "sound": "beacon.power",
+                "volume": 1,
+                "pitch": 1
+            },
+            "glass": {
+                "sound": "random.glass",
+                "volume": 1,
+                "pitch": 1
+            },
+            "potion.brewed": {
+                "sound": "random.potion.brewed",
+                "volume": 1,
+                "pitch": 1
+            },
+            "conduit.activate": {
+                "sound": "conduit.activate",
+                "volume": 1,
+                "pitch": 1
+            },
+            "conduit.ambient": {
+                "sound": "conduit.ambient",
+                "volume": 1,
+                "pitch": 1
+            },
+            "conduit.attack": {
+                "sound": "conduit.attack",
+                "volume": 1,
+                "pitch": 1
+            },
+            "conduit.deactivate": {
+                "sound": "conduit.deactivate",
+                "volume": 1,
+                "pitch": 1
+            },
+            "conduit.short": {
+                "sound": "conduit.short",
+                "volume": 1,
+                "pitch": 1
+            },
+            "chorusgrow": {
+                "sound": "block.chorusflower.grow",
+                "volume": 1,
+                "pitch": 1
+            },
+            "chorusdeath": {
+                "sound": "block.chorusflower.death",
+                "volume": 1,
+                "pitch": 1
+            },
+            "fizz": {
+                "sound": "random.fizz",
+                "volume": 0.5,
+                "pitch": [
+                    1.8,
+                    2.4
+                ]
+            },
+            "bow.hit": {
+                "sound": "random.bowhit",
+                "volume": 1,
+                "pitch": [
+                    1.09,
+                    1.3
+                ]
+            },
+            "bullet.hit": {
+                "sound": "mob.shulker.bullet.hit",
+                "volume": 1,
+                "pitch": 1
+            },
+            "extinguish.fire": {
+                "sound": "random.fizz",
+                "volume": 0.5,
+                "pitch": [
+                    1.8,
+                    2.4
+                ]
+            },
+            "explode": {
+                "sound": "random.explode",
+                "volume": 4,
+                "pitch": 1
+            },
+            "chest.open": {
+                "sound": "random.chestopen",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "chest.closed": {
+                "sound": "random.chestclosed",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "shulkerbox.open": {
+                "sound": "random.shulkerboxopen",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "shulkerbox.closed": {
+                "sound": "random.shulkerboxclosed",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "enderchest.open": {
+                "sound": "random.enderchestopen",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "enderchest.closed": {
+                "sound": "random.enderchestclosed",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "ignite": {
+                "sound": "fire.ignite",
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ]
+            },
+            "power.on": {
+                "sound": "random.click",
+                "volume": 1,
+                "pitch": 0.6
+            },
+            "power.off": {
+                "sound": "random.click",
+                "volume": 1,
+                "pitch": 0.5
+            },
+            "attach": {
+                "sound": "random.click",
+                "volume": 1,
+                "pitch": 0.7
+            },
+            "detach": {
+                "sound": "random.bowhit",
+                "volume": 0.4,
+                "pitch": [
+                    1.1,
+                    1.33
+                ]
+            },
+            "break": {
+                "sound": "random.break",
+                "volume": 1,
+                "pitch": 0.9
+            },
+            "thorns": {
+                "sound": "damage.thorns",
+                "volume": 0.5,
+                "pitch": 1
+            },
+            "fire": {
+                "sound": "fire.fire",
+                "volume": [
+                    1,
+                    2
+                ],
+                "pitch": [
+                    0.3,
+                    1
+                ]
+            },
+            "piston.out": {
+                "sound": "tile.piston.out",
+                "volume": 0.5,
+                "pitch": [
+                    0.6,
+                    0.75
+                ]
+            },
+            "piston.in": {
+                "sound": "tile.piston.in",
+                "volume": 0.5,
+                "pitch": [
+                    0.6,
+                    0.75
+                ]
+            },
+            "portal": {
+                "sound": "portal.portal",
+                "volume": 0.25,
+                "pitch": [
+                    0.8,
+                    1.2
+                ]
+            },
+            "water": {
+                "sound": "liquid.water",
+                "volume": [
+                    0.75,
+                    1
+                ],
+                "pitch": [
+                    0.5,
+                    1.5
+                ]
+            },
+            "lava.pop": {
+                "sound": "liquid.lavapop",
+                "volume": [
+                    0.4,
+                    0.6
+                ],
+                "pitch": [
+                    0.9,
+                    1.05
+                ]
+            },
+            "lava": {
+                "sound": "liquid.lava",
+                "volume": [
+                    0.4,
+                    0.6
+                ],
+                "pitch": [
+                    0.9,
+                    1.05
+                ]
+            },
+            "bubble.pop": {
+                "sound": "bubble.pop",
+                "volume": [
+                    0.4,
+                    0.6
+                ],
+                "pitch": [
+                    0.9,
+                    1.05
+                ]
+            },
+            "bubble.up": {
+                "sound": "bubble.up",
+                "volume": [
+                    0.4,
+                    0.6
+                ],
+                "pitch": [
+                    0.9,
+                    1.05
+                ]
+            },
+            "bubble.upinside": {
+                "sound": "bubble.upinside",
+                "volume": [
+                    1,
+                    1.5
+                ],
+                "pitch": [
+                    0.9,
+                    1.05
+                ]
+            },
+            "bubble.down": {
+                "sound": "bubble.down",
+                "volume": [
+                    0.4,
+                    0.6
+                ],
+                "pitch": [
+                    0.9,
+                    1.05
+                ]
+            },
+            "bubble.downinside": {
+                "sound": "bubble.downinside",
+                "volume": [
+                    1,
+                    1.5
+                ],
+                "pitch": [
+                    0.9,
+                    1.05
+                ]
+            },
+            "burp": {
+                "sound": "random.burp",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "bow": {
+                "sound": "random.bow",
+                "volume": 1,
+                "pitch": [
+                    0.83,
+                    1.25
+                ]
+            },
+            "shear": {
+                "sound": "mob.sheep.shear",
+                "volume": 1,
+                "pitch": 1
+            },
+            "milk": {
+                "sound": "mob.cow.milk",
+                "volume": 1,
+                "pitch": 1
+            },
+            "note": {
+                "sound": "",
+                "volume": 3
+            },
+            "levelup": {
+                "sound": "random.levelup",
+                "pitch": 1
+            },
+            "deny": {
+                "sound": "block.false_permissions",
+                "volume": 0.8,
+                "pitch": [
+                    0.8,
+                    1.2
+                ]
+            },
+            "tripod": {
+                "sound": "dig.stone",
+                "volume": 2,
+                "pitch": [
+                    0.9,
+                    1.1
+                ]
+            },
+            "bucket.fill.water": {
+                "sound": "bucket.fill_water",
+                "volume": 1,
+                "pitch": 1
+            },
+            "bucket.empty.water": {
+                "sound": "bucket.empty_water",
+                "volume": 1,
+                "pitch": 1
+            },
+            "bucket.fill.lava": {
+                "sound": "bucket.fill_lava",
+                "volume": 1,
+                "pitch": 1
+            },
+            "bucket.empty.lava": {
+                "sound": "bucket.empty_lava",
+                "volume": 1,
+                "pitch": 1
+            },
+            "bucket.fill.fish": {
+                "sound": "bucket.fill_fish",
+                "volume": 1,
+                "pitch": 1
+            },
+            "bucket.empty.fish": {
+                "sound": "bucket.empty_fish",
+                "volume": 1,
+                "pitch": 1
+            },
+            "pop": {
+                "sound": "random.pop",
+                "volume": 0.25,
+                "pitch": [
+                    0.6,
+                    2.2
+                ]
+            },
+            "drop.slot": {
+                "sound": "random.pop",
+                "volume": 0.3,
+                "pitch": [
+                    0.55,
+                    0.75
+                ]
+            },
+            "remedy": {
+                "sound": "mob.zombie.remedy",
+                "volume": [
+                    1,
+                    2
+                ],
+                "pitch": [
+                    0.3,
+                    1
+                ]
+            },
+            "unfect": {
+                "sound": "mob.zombie.unfect",
+                "volume": [
+                    1,
+                    2
+                ],
+                "pitch": [
+                    0.3,
+                    1
+                ]
+            },
+            "convert_to_drowned": {
+                "sound": "mob.zombie.converted_to_drowned",
+                "volume": [
+                    1,
+                    2
+                ],
+                "pitch": [
+                    0.3,
+                    1
+                ]
+            },
+            "saddle": {
+                "sound": "mob.horse.leather",
+                "volume": 0.5,
+                "pitch": 1
+            },
+            "camera.take_picture": {
+                "sound": "camera.take_picture",
+                "volume": 1,
+                "pitch": 1
+            },
+            "leashknot.break": {
+                "sound": "leashknot.break",
+                "volume": 1,
+                "pitch": 1
+            },
+            "leashknot.place": {
+                "sound": "leashknot.place",
+                "volume": 1,
+                "pitch": 1
+            },
+            "mob.armor_stand.place": {
+                "sound": "mob.armor_stand.place",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.13": {
+                "sound": "record.13",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.cat": {
+                "sound": "record.cat",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.blocks": {
+                "sound": "record.blocks",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.chirp": {
+                "sound": "record.chirp",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.far": {
+                "sound": "record.far",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.mall": {
+                "sound": "record.mall",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.mellohi": {
+                "sound": "record.mellohi",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.stal": {
+                "sound": "record.stal",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.strad": {
+                "sound": "record.strad",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.ward": {
+                "sound": "record.ward",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.11": {
+                "sound": "record.11",
+                "volume": 1,
+                "pitch": 1
+            },
+            "record.wait": {
+                "sound": "record.wait",
+                "volume": 1,
+                "pitch": 1
+            },
+            "launch": {
+                "sound": "firework.launch",
+                "volume": 1,
+                "pitch": 1
+            },
+            "blast": {
+                "sound": "firework.blast",
+                "volume": 1,
+                "pitch": 1
+            },
+            "large.blast": {
+                "sound": "firework.large_blast",
+                "volume": 1,
+                "pitch": 1
+            },
+            "twinkle": {
+                "sound": "firework.twinkle",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.end_portal_frame.fill": {
+                "sound": "block.end_portal_frame.fill",
+                "volume": 0.3,
+                "pitch": 1
+            },
+            "block.end_portal.spawn": {
+                "sound": "block.end_portal.spawn",
+                "volume": 0.7,
+                "pitch": 1
+            },
+            "random.anvil_use": {
+                "sound": "random.anvil_use",
+                "volume": 0.6,
+                "pitch": 1
+            },
+            "block.smithing_table.use": {
+                "sound": "random.anvil_use",
+                "volume": 0.25,
+                "pitch": 1
+            },
+            "block.barrel.open": {
+                "sound": "block.barrel.open",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.barrel.close": {
+                "sound": "block.barrel.close",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.grindstone.use": {
+                "sound": "block.grindstone.use",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.composter.empty": {
+                "sound": "block.composter.empty",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.composter.fill": {
+                "sound": "block.composter.fill",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.composter.fill_success": {
+                "sound": "block.composter.fill_success",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.composter.ready": {
+                "sound": "block.composter.ready",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.furnace.lit": {
+                "sound": "block.furnace.lit",
+                "volume": 3,
+                "pitch": 1
+            },
+            "block.smoker.smoke": {
+                "sound": "block.smoker.smoke",
+                "volume": 3,
+                "pitch": 1
+            },
+            "block.blastfurnace.fire_crackle": {
+                "sound": "block.blastfurnace.fire_crackle",
+                "volume": 3,
+                "pitch": 0.6
+            },
+            "block.loom.use": {
+                "sound": "block.loom.use",
+                "volume": 0.75,
+                "pitch": 1
+            },
+            "block.fletching_table.use": {
+                "sound": "dig.wood",
+                "volume": 12,
+                "pitch": 1
+            },
+            "bottle.dragonbreath": {
+                "sound": "bottle.dragonbreath",
+                "volume": 0.7,
+                "pitch": 1
+            },
+            "item.trident.return": {
+                "sound": "item.trident.return",
+                "volume": 10,
+                "pitch": 1
+            },
+            "item.trident.riptide_1": {
+                "sound": "item.trident.riptide_1",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.trident.riptide_2": {
+                "sound": "item.trident.riptide_2",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.trident.riptide_3": {
+                "sound": "item.trident.riptide_3",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.trident.throw": {
+                "sound": "item.trident.throw",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.trident.thunder": {
+                "sound": "item.trident.thunder",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.trident.hit": {
+                "sound": "item.trident.hit",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.trident.hit_ground": {
+                "sound": "item.trident.hit_ground",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.shield.block": {
+                "sound": "item.shield.block",
+                "volume": 0.7,
+                "pitch": 1
+            },
+            "armor.equip_chain": {
+                "sound": "armor.equip_chain",
+                "volume": 1,
+                "pitch": 1
+            },
+            "armor.equip_diamond": {
+                "sound": "armor.equip_diamond",
+                "volume": 1,
+                "pitch": 1
+            },
+            "armor.equip_generic": {
+                "sound": "armor.equip_generic",
+                "volume": 1,
+                "pitch": 1
+            },
+            "armor.equip_gold": {
+                "sound": "armor.equip_gold",
+                "volume": 1,
+                "pitch": 1
+            },
+            "armor.equip_iron": {
+                "sound": "armor.equip_iron",
+                "volume": 1,
+                "pitch": 1
+            },
+            "armor.equip_leather": {
+                "sound": "armor.equip_leather",
+                "volume": 1,
+                "pitch": 1
+            },
+            "armor.equip_elytra": {
+                "sound": "armor.equip_leather",
+                "volume": 1,
+                "pitch": 1
+            },
+            "portal.travel": {
+                "sound": "portal.travel",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.turtle_egg.crack": {
+                "sound": "block.turtle_egg.crack",
+                "volume": 0.85,
+                "pitch": 0.9
+            },
+            "block.turtle_egg.break": {
+                "sound": "block.turtle_egg.break",
+                "volume": 0.85,
+                "pitch": 0.9
+            },
+            "block.turtle_egg.hatch": {
+                "sound": "block.turtle_egg.drop",
+                "volume": 0.85,
+                "pitch": 0.9
+            },
+            "block.turtle_egg.attack": {
+                "sound": "fall.egg",
+                "volume": 0.5,
+                "pitch": [
+                    0.9,
+                    1
+                ]
+            },
+            "block.bamboo_sapling.place": {
+                "sound": "block.bamboo_sapling.place",
+                "volume": 0.8,
+                "pitch": 0.8
+            },
+            "block.scaffolding.climb": {
+                "sound": "block.scaffolding.climb",
+                "volume": 1,
+                "pitch": 1
+            },
+            "crossbow.loading.start": {
+                "sound": "crossbow.loading.start",
+                "volume": 1,
+                "pitch": 1
+            },
+            "crossbow.loading.middle": {
+                "sound": "crossbow.loading.middle",
+                "volume": 1,
+                "pitch": 1
+            },
+            "crossbow.loading.end": {
+                "sound": "crossbow.loading.middle",
+                "volume": 1,
+                "pitch": 1
+            },
+            "crossbow.shoot": {
+                "sound": "crossbow.shoot",
+                "volume": 1,
+                "pitch": 1
+            },
+            "crossbow.quick_charge.start": {
+                "sound": "crossbow.quick_charge.start",
+                "volume": 1,
+                "pitch": 1
+            },
+            "crossbow.quick_charge.middle": {
+                "sound": "crossbow.quick_charge.middle",
+                "volume": 1,
+                "pitch": 1
+            },
+            "crossbow.quick_charge.end": {
+                "sound": "crossbow.quick_charge.end",
+                "volume": 1,
+                "pitch": 1
+            },
+            "item.book.put": {
+                "sound": "item.book.put",
+                "volume": 1.2,
+                "pitch": 1
+            },
+            "teleport": {
+                "sound": "mob.shulker.teleport",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.bell.hit": {
+                "sound": "block.bell.hit",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.campfire.crackle": {
+                "sound": "block.campfire.crackle",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.stonecutter.use": {
+                "sound": "block.stonecutter.use",
+                "volume": 0.7,
+                "pitch": 1
+            },
+            "block.cartography_table.use": {
+                "sound": "block.cartography_table.use",
+                "volume": 0.8,
+                "pitch": 1
+            },
+            "block.sweet_berry_bush.hurt": {
+                "sound": "block.sweet_berry_bush.hurt",
+                "volume": 1,
+                "pitch": 1
+            },
+            "block.sweet_berry_bush.pick": {
+                "sound": "block.sweet_berry_bush.pick",
+                "volume": 1,
+                "pitch": 1
+            },
+            "ui.stonecutter.take_result": {
+                "sound": "ui.stonecutter.take_result",
+                "volume": 1,
+                "pitch": 1
+            },
+            "ui.cartography_table.take_result": {
+                "sound": "ui.cartography_table.take_result",
+                "volume": 0.8,
+                "pitch": 1
+            },
+            "ui.loom.take_result": {
+                "sound": "ui.loom.take_result",
+                "volume": 0.65,
+                "pitch": 1
+            },
+            "raid.horn": {
+                "sound": "raid.horn",
+                "volume": 60,
+                "pitch": 1
+            },
+            "convert_mooshroom": {
+                "sound": "mob.mooshroom.convert",
+                "volume": 1,
+                "pitch": 1
+            },
+            "milk_suspiciously": {
+                "sound": "mob.mooshroom.suspicious_milk",
+                "volume": 1,
+                "pitch": 1
+            },
+            "ambient.cave": {
+                "sound": "ambient.cave",
+                "volume": 0.7,
+                "pitch": [
+                    0.8,
+                    1
+                ]
+            }
+        }
+    },
+    "block_sounds": {
+        "normal": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.stone",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.stone",
+                    "volume": 0.27,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "gravel": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.gravel",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.gravel",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.gravel",
+                    "volume": 0.17,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.gravel",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "wood": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.wood",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.wood",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.wood",
+                    "volume": 0.23,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.wood",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        0.8
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "grass": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.grass",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.grass",
+                    "volume": 0.7,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.grass",
+                    "volume": 0.3,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.grass",
+                    "volume": 0.8,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "stone": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.stone",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.stone",
+                    "volume": 0.37,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "cloth": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.cloth",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.cloth",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.cloth",
+                    "volume": 0.35,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.cloth",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "glass": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.stone",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "random.glass",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.stone",
+                    "volume": 0.4,
+                    "pitch": 0.6
+                },
+                "place": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "sand": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.sand",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.sand",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.sand",
+                    "volume": 0.23,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.sand",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "snow": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.snow",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.snow",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.snow",
+                    "volume": 0.35,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.snow",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "ladder": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.ladder",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.wood",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.ladder",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.wood",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "slime": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.slime",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "mob.slime.big",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.slime",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "mob.slime.big",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "metal": {
+            "volume": 1,
+            "pitch": 1.5,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.anvil",
+                    "pitch": 1.2
+                },
+                "break": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        1.1,
+                        1.2
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.stone",
+                    "volume": 0.3,
+                    "pitch": 0.75
+                },
+                "place": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        1.2,
+                        1.25
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "anvil": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.stone",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.anvil",
+                    "volume": 0.35,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "random.anvil_land",
+                    "volume": 0.5,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "itemframe": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "block.itemframe.place",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "block.itemframe.break",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.wood",
+                    "volume": 0.22,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "block.itemframe.place",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "turtle_egg": {
+            "volume": 0.85,
+            "pitch": 0.9,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "use.stone",
+                    "pitch": 1
+                },
+                "break": {
+                    "sound": "",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.stone",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "dig.stone",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                }
+            }
+        },
+        "bamboo": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "block.bamboo.place",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "block.bamboo.break",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "block.bamboo.hit",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "block.bamboo.place",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "bamboo_sapling": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "block.bamboo_sapling.place",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "block.bamboo_sapling.break",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "block.bamboo_sapling.place",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "scaffolding": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "block.scaffolding.place",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "block.scaffolding.break",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "block.scaffolding.hit",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "block.scaffolding.place",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        0.9
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "lantern": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "block.lantern.place",
+                    "pitch": 1.1
+                },
+                "break": {
+                    "sound": "block.lantern.break",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "block.lantern.hit",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "block.lantern.place",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        },
+        "sweet_berry_bush": {
+            "volume": 1,
+            "pitch": 1,
+            "events": {
+                "default": "",
+                "item.use.on": {
+                    "sound": "block.sweet_berry_bush.place",
+                    "pitch": 0.8
+                },
+                "break": {
+                    "sound": "block.sweet_berry_bush.break",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "hit": {
+                    "sound": "hit.grass",
+                    "volume": 0.25,
+                    "pitch": 0.5
+                },
+                "place": {
+                    "sound": "block.sweet_berry_bush.place",
+                    "volume": 1,
+                    "pitch": [
+                        0.8,
+                        1
+                    ]
+                },
+                "power.on": {
+                    "sound": "random.click",
+                    "pitch": 0.6
+                },
+                "power.off": {
+                    "sound": "random.click",
+                    "pitch": 0.5
+                }
+            }
+        }
+    },
+    "entity_sounds": {
+        "defaults": {
+            "volume": 1,
+            "pitch": [
+                0.8,
+                1.2
+            ],
+            "events": {
+                "fall.big": {
+                    "sound": "damage.fallbig",
+                    "volume": 0.75,
+                    "pitch": 1
+                },
+                "fall.small": {
+                    "sound": "damage.fallsmall",
+                    "volume": 0.75,
+                    "pitch": 1
+                },
+                "splash": {
+                    "sound": "random.splash",
+                    "pitch": [
+                        0.6,
+                        1.4
+                    ]
+                },
+                "swim": {
+                    "sound": "random.swim",
+                    "pitch": [
+                        0.6,
+                        1.4
+                    ]
+                },
+                "fizz": {
+                    "sound": "random.fizz",
+                    "volume": 0.7,
+                    "pitch": [
+                        1.2,
+                        2
+                    ]
+                },
+                "drink": {
+                    "sound": "random.drink",
+                    "volume": 0.35,
+                    "pitch": [
+                        0.9,
+                        1.1
+                    ]
+                },
+                "eat": {
+                    "sound": "random.eat",
+                    "volume": [
+                        0.5,
+                        1.1
+                    ],
+                    "pitch": [
+                        0.8,
+                        1.2
+                    ]
+                },
+                "ambient": "",
+                "flop": "",
+                "hurt": "game.player.hurt",
+                "death": "game.player.die",
+                "ambient.in.water": "",
+                "hurt.in.water": "",
+                "death.in.water": "",
+                "ambient.in.raid": "",
+                "celebrate": ""
+            }
+        },
+        "entities": {
+            "xp_orb": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "fizz": {
+                        "sound": "random.fizz",
+                        "volume": 0.4,
+                        "pitch": [
+                            2,
+                            2.4
+                        ]
+                    }
+                }
+            },
+            "lightning_bolt": {
+                "volume": 1000,
+                "events": {
+                    "thunder": {
+                        "sound": "ambient.weather.thunder",
+                        "pitch": [
+                            0.6,
+                            1
+                        ]
+                    },
+                    "explode": {
+                        "sound": "ambient.weather.lightning.impact",
+                        "pitch": [
+                            0.3,
+                            0.7
+                        ]
+                    }
+                }
+            },
+            "item": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "fizz": {
+                        "sound": "random.fizz",
+                        "volume": 0.4,
+                        "pitch": [
+                            2,
+                            2.4
+                        ]
+                    }
+                }
+            },
+            "player": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "throw": {
+                        "sound": "random.bow",
+                        "volume": 0.5,
+                        "pitch": [
+                            0.33,
+                            0.5
+                        ]
+                    },
+                    "hurt": "game.player.hurt",
+                    "death": "game.player.die",
+                    "hurt.in.water": "game.player.hurt",
+                    "death.in.water": "game.player.die",
+                    "attack.nodamage": "game.player.attack.nodamage",
+                    "attack.strong": "game.player.attack.strong",
+                    "elderguardian.curse": {
+                        "sound": "mob.elderguardian.curse",
+                        "volume": 1,
+                        "pitch": 1
+                    }
+                }
+            },
+            "minecraft:npc": {
+                "volume": 1,
+                "pitch": [
+                    0.8,
+                    1.2
+                ],
+                "events": {
+                    "ambient": "mob.villager.idle",
+                    "hurt": "mob.villager.hit",
+                    "death": "dig.wood"
+                }
+            }
+        }
+    },
+    "interactive_sounds": {
+        "block_sounds": {
+            "normal": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.stone",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.stone",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.stone",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.stone",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "gravel": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.gravel",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.gravel",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.gravel",
+                        "volume": 0.1
+                    },
+                    "land": {
+                        "sound": "land.gravel",
+                        "volume": 0.17
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "wood": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.wood",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.wood",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.wood",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.wood",
+                        "volume": 0.18
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "grass": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.grass",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.grass",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.grass",
+                        "volume": 0.11
+                    },
+                    "land": {
+                        "sound": "land.grass",
+                        "volume": 0.21
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "stone": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.stone",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.stone",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.stone",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.stone",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "cloth": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.cloth",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.cloth",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.cloth",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.cloth",
+                        "volume": 0.18
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "glass": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.stone",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.stone",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.stone",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.stone",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "sand": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.sand",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.sand",
+                        "volume": 0.15
+                    },
+                    "jump": {
+                        "sound": "jump.sand",
+                        "volume": 0.05
+                    },
+                    "land": {
+                        "sound": "land.sand",
+                        "volume": 0.14
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "snow": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.snow",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.snow",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.snow",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.snow",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "ladder": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.ladder",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.ladder",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.ladder",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.ladder",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "slime": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.slime",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.slime",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.slime",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.slime",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "anvil": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.anvil",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.anvil",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.anvil",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.anvil",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 0.35,
+                "pitch": 1
+            },
+            "metal": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.stone",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.stone",
+                        "volume": 0.35
+                    },
+                    "jump": {
+                        "sound": "jump.stone",
+                        "volume": 0.12
+                    },
+                    "land": {
+                        "sound": "land.stone",
+                        "volume": 0.22
+                    }
+                },
+                "volume": 1,
+                "pitch": 1.5
+            },
+            "turtle_egg": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "fall.egg",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "step.stone",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.stone",
+                        "volume": 0.15
+                    },
+                    "land": {
+                        "sound": "fall.egg",
+                        "volume": 0.2
+                    }
+                },
+                "volume": 1,
+                "pitch": 0.9
+            },
+            "bamboo": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "block.bamboo.fall",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "block.bamboo.step",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.wood",
+                        "volume": 0.15
+                    },
+                    "land": {
+                        "sound": "block.bamboo.fall",
+                        "volume": 0.2
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "lantern": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "block.lantern.fall",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "block.lantern.step",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.metal",
+                        "volume": 0.15
+                    },
+                    "land": {
+                        "sound": "block.lantern.fall",
+                        "volume": 0.2
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            },
+            "scaffolding": {
+                "events": {
+                    "default": "",
+                    "fall": {
+                        "sounds": "block.scaffolding.fall",
+                        "volume": 0.4
+                    },
+                    "step": {
+                        "sound": "block.scaffolding.step",
+                        "volume": 0.3
+                    },
+                    "jump": {
+                        "sound": "jump.wood",
+                        "volume": 0.15
+                    },
+                    "land": {
+                        "sound": "block.scaffolding.fall",
+                        "volume": 0.2
+                    }
+                },
+                "volume": 1,
+                "pitch": 1
+            }
+        },
+        "entity_sounds": {
+            "defaults": {
+                "volume": 0.25,
+                "pitch": 1,
+                "events": {
+                    "fall": {
+                        "default": {
+                            "sound": "",
+                            "volume": 1,
+                            "pitch": 0.75
+                        }
+                    },
+                    "jump": {
+                        "default": {
+                            "sound": "",
+                            "volume": 0.25,
+                            "pitch": 0.75
+                        }
+                    }
+                }
+            
+            }
+        }
+    }
+}
