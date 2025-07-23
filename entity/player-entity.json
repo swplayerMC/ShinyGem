@@ -89,6 +89,7 @@
             //"variables": {},
             "initialize": [
                 "v.jump_reset_count = 0;",
+                "v.jump_reset = 0;",
                 "v.genfx_combo = 0;",
                 "v.genfx_crosshair_geo = 0;",
                 "v.hurt = 0;",
@@ -104,8 +105,10 @@
 
                 "t.genfx_jreset_speed = q.ground_speed < 3 && q.vertical_speed > 1 ? 1 : 0;",
                 
-                "v.genfx_vfx_jump_reset = q.is_jumping && v.hurt ? 1 : 0;",
-                
+                "v.genfx_vfx_jump_reset = q.is_jumping && (v.hurt) ? 1 : 0;",
+
+                "v.em_combate = v.genfx_vfx_jump_reset ? 'jump_reset' : 'combo';",
+
                 "v.genfx_s_armadura = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_armor') ? 1 : 0;",
 
                 "v.genfx_s_espada = q.equipped_item_any_tag('slot.weapon.mainhand', 'minecraft:is_sword') ? 1 : 0;",
