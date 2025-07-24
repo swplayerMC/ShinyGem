@@ -360,7 +360,7 @@
             }
         },
         "variants": {
-            "key": "v.genfx_vfx_jump_reset ? 'jump_reset_sfx' : 'normal'",
+            "key": "v.jump_reset ? 'jump_reset_sfx' : 'normal'",
             "map": {
                 "normal": {
                     "volume": 1.0,
@@ -371,7 +371,7 @@
                 "jump_reset_sfx": {
                     "volume": 1.0,
                     "events": {
-                        "jump": ""
+                        "jump": "generatefx.sound_effects.player_combo"
                     }
                 }
             }
