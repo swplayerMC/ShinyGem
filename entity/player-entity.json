@@ -88,6 +88,7 @@
             "scale": "0.9375",
             //"variables": {},
             "initialize": [
+                "v.crosshair_color_index = 0;",
                 "v.jump_reset_count = 0;",
                 "v.jump_reset = 0;",
                 "v.genfx_combo = 0;",
@@ -190,7 +191,7 @@
                 "controller.render.player.map": "variable.map_face_icon"
             },
             {
-                "controller.render.sg_crosshair": "!q.is_in_ui && !v.is_paperdoll && v.is_first_person"
+                "controller.render.sg_crosshair": "q.is_in_ui && v.is_paperdoll"
             }
         ],
         "min_engine_version": "1.10.0",

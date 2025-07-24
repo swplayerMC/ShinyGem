@@ -29,6 +29,15 @@
 				"operation": "insert_front", //Isso faz ele adicionar ao topo da lista
 				"value": [ //O que ele adiciona:
 					{
+						"mira_dinamica": {
+							"type": "custom",
+							"renderer": "live_player_renderer",
+							"anchor_from": "center",
+							"anchor_to": "center",
+							"size": [ "200%", "200%" ]
+						}
+					},
+					{
 						"crosshair@SG_crosshair.crosshair_image": {}
 					},
 					{

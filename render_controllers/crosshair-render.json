@@ -9,7 +9,7 @@
             },
             "geometry": "Geometry.crosshair",
             "materials": [ { "*": "Material.crosshair" } ],
-            "textures": [ "Array.crosshair_colors[v.jump_reset]" ],
+            "textures": [ "Array.crosshair_colors[v.crosshair_color_index]" ],
             "part_visibility": [
                 { "*": "v.genfx_standby" }
             ],

@@ -7,6 +7,9 @@
 				"crosshair": {
 					"rotation": [0, 0, 0],
 					"position": [0, 0, "v.is_first_person ? 200 : -200"]
+				},
+				"root": {
+					"scale": "q.is_in_ui ? 0 : 1"
 				}
 			}
 		},
