@@ -1,7 +1,7 @@
 {
   "namespace": "SG_touch_cursor",
   "animation": {
-    "anim_typt": "flip_book",
+    "anim_type": "flip_book",
     "duration": 2,
     "easing": "linear",
     "initial_uv": [ 17, 17 ],
