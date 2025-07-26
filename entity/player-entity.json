@@ -4,6 +4,7 @@
         "description": {
         "identifier": "minecraft:player",
         "animations": {
+            //Animações vanilla:
             "root": "controller.animation.player.root",
             "base_controller": "controller.animation.player.base",
             "hudplayer": "controller.animation.player.hudplayer",
@@ -66,11 +67,27 @@
             "crawling": "animation.player.crawl",
             "crawling.legs": "animation.player.crawl.legs",
             "holding_heavy_core": "animation.player.holding_heavy_core",
-            "3p_spawnando": "animation.player.3p_spawn_setup",
+            //  /\  Animações vanilla  /\
+
+
+            //Animações personalizadas do jogador:
+            "raiz": "controller.animation.player.raiz",
+            "scripts": "animation.player.scripts",
+            "camera": "animation.player.camera_fix",
+            "movimentacao": "controller.animation.player.3p_movimentos",
             "se_afk": "controller.animation.player.afk",
-            "3p_afk1": "animation.player.3p_afk1",
             "pegou_um_combo": "animation.player.pegou_um_combo",
             "combo": "controller.animation.player.combo",
+            "1p_parado": "animation.player.1p",
+            "3p_afk1": "animation.player.3p_afk1",
+            "3p_parado": "animation.player.3p_parado",
+            "3p_agachado": "animation.player.3p_agachado",
+            "3p_andando_agachado": "animation.player.3p_andando_agachado",
+            "3p_spawnando": "animation.player.3p_spawn_setup",
+            //   /\  Animações personalizadas do jogador  /\
+
+
+            //Animações da mira:
             "mira_dinamica": "controller.animation.genfx_crosshairs",
             "fixar_mira": "animation.sg_crosshair.inteiro",
             "mira_principal": "animation.sg_crosshair.main",
@@ -82,9 +99,9 @@
             "mira_segurando_lancadores": "animation.sg_crosshair.segurando_lancadores",
             "mira_segurando_outros": "animation.sg_crosshair.segurando_outros",
             "scripts": "animation.player.scripts"
+            //   /\  Animações da mira  /\
         },
         "scripts": {
-            //"scale": "3.0",
             "scale": "0.9375",
             //"variables": {},
             "initialize": [
@@ -174,6 +191,8 @@
             "crosshair": "geometry.sg_crosshair"
         },
         "render_controllers": [
+            
+            // Os comentados abaixo são os padrões do jogo
             // {
             //     "controller.render.player.first_person_spectator": "variable.is_first_person && query.is_spectator"
             // },
