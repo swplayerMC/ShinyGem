@@ -36,15 +36,15 @@
 				"array_name": "controls", //Adiciona os itens da lista "value" abaixo, na lista "controls" do objeto "hud_content" do arquivo "hud_screen.json" sem alterar nada no vanilla
 				"operation": "insert_front", //Isso faz ele adicionar ao topo da lista
 				"value": [ //O que ele adiciona:
-					{
-						"mira_dinamica": {
-							"type": "custom",
-							"renderer": "live_player_renderer",
-							"anchor_from": "center",
-							"anchor_to": "center",
-							"size": [ "200%", "200%" ]
-						}
-					},
+					// {
+					// 	"mira_dinamica": {
+					// 		"type": "custom",
+					// 		"renderer": "live_player_renderer",
+					// 		"anchor_from": "center",
+					// 		"anchor_to": "center",
+					// 		"size": [ "200%", "200%" ]
+					// 	}
+					// },
 					{
 						"crosshair@SG_crosshair.crosshair_image": {}
 					},

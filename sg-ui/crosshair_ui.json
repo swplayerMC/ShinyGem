@@ -6,7 +6,7 @@
         "texture": "images/ui/crosshair", //O "crosshair.png" na pasta "images/ui"
         "anchor_from": "center",
         "anchor_to": "center",
-        "alpha": 0,
+        "alpha": 1,
         "size": [ 17, 17 ] // Não sei se usar porcentagem é melhor... Por enquanto, vamos usar pixels
     },
 
