@@ -1,0 +1,71 @@
+{
+    "namespace": "ShinyGem_screen",
+
+    "navigate": {
+        "type": "input_panel",
+        "hover_enabled": true,
+        "ttsSectionContainer": true,
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_up",
+                "to_button_id": "button.menu_up",
+                "mapping_type": "global",
+                "scope": "view"
+            },
+            {
+                "from_button_id": "button.menu_down",
+                "to_button_id": "button.menu_down",
+                "mapping_type": "global",
+                "scope": "view"
+            },
+            {
+                "from_button_id": "button.menu_left",
+                "to_button_id": "button.menu_left",
+                "mapping_type": "global",
+                "scope": "view"
+            },
+            {
+                "from_button_id": "button.menu_right",
+                "to_button_id": "button.menu_right",
+                "mapping_type": "global",
+                "scope": "view"
+            }
+        ]
+    },
+
+    "background": {
+        "type": "image",
+        "texture": "images/ui/minha_tela",
+        "size": [ "100%", "100%" ],
+        "anchor_from": "center",
+        "anchor_to": "center"
+    },
+
+    "tela": {
+        "type": "screen",
+        "render_only_when_topmost": true,
+        "render_game_behind": false,
+        "close_on_player_hurt": true,
+        "cache_screen": true,
+        "button_mappings": [
+            {
+                "from_button_id": "button.menu_cancel",
+                "to_button_id": "button.menu_continue",
+                "mapping_type": "global"
+            },
+            {
+                "from_button_id": "button.controller_start",
+                "to_button_id": "button.menu_continue",
+                "mapping_type": "global"
+            }
+        ],
+        "controls": [
+            {
+                "navegacao@ShinyGem_screen.navigate": {}
+            },
+            {
+                "fundo@ShinyGem_screen.background": {}
+            }
+        ]
+    }
+}

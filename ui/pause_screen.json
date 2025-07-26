@@ -1,0 +1,19 @@
+{
+    "namespace": "pause",
+    "paper_doll_panel": {
+        "modifications": [
+            {
+                "control_name": "paper_doll",
+                "operation": "replace",
+                "where": {
+                    "camera_tilt_degrees": -10,
+                    "starting_rotation": 30
+                },
+                "value": {
+                    "camera_tilt_degrees": -15,
+                    "starting_rotation": 40
+                }
+            }
+        ]
+    }
+}
