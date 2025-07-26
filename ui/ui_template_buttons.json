@@ -1,18 +1,7 @@
 {
     "namespace": "common_buttons",
-    "new_ui_button_panel": {
-        "modifications": [
-            {
-                "operation": "swap",
-                "where": {
-                    "$border_visible|default": true,
-                    "$border_alpha|default": 1
-                },
-                "target": {
-                    "$border_visible|default": false,
-                    "$border_alpha|default": 0
-                }
-            }
-        ]
+    "new_ui_button_panel@common_buttons.new_ui_button_panel": {
+        "$border_visible|default": false,
+        "$border_alpha|default": 0
     }
 }

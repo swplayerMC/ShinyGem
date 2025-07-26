@@ -80,6 +80,8 @@
 
   "$slider_default_border_color": [ "$SG_default_ui_color_red", "$SG_default_ui_color_green", "$SG_default_ui_color_blue" ],
   "$slider_hover_border_color": [ "$SG_default_ui_color_red", "$SG_default_ui_color_green", "$SG_default_ui_color_blue" ],
+  "$border_alpha": 0,
+  "$border_default_alpha": 0,
 
   // Color format codes: (those colors you get by typing the § simbol and a letter or number)
   //It includes the new ones :D
