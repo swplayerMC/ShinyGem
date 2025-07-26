@@ -25,6 +25,46 @@
                     ]
                 }
             ]
+        },
+        "gold_ore": {
+            "textures": [
+                {
+                    "variations": [
+                        {
+                            "path": "textures/blocks/variables/gold_ore1",
+                            "weight": 1
+                        },
+                        {
+                            "path": "textures/blocks/variables/gold_ore2",
+                            "weight": 1
+                        },
+                        {
+                            "path": "textures/blocks/variables/gold_ore3",
+                            "weight": 1
+                        },
+                        {
+                            "path": "textures/blocks/variables/gold_ore4",
+                            "weight": 1
+                        }
+                    ]
+                }
+            ]
+        },
+        "cobblestone": {
+            "textures": [
+                {
+                    "variations": [
+                        {
+                            "path": "textures/blocks/variables/cobblestone1",
+                            "weight": 1
+                        },
+                        {
+                            "path": "textures/blocks/variables/cobblestone2",
+                            "weight": 1
+                        }
+                    ]
+                }
+            ]
         }
     }
 }
