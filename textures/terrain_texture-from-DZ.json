@@ -1,0 +1,32 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "DZ_andesite-on-ground": {
+            "textures": [
+                {
+                "variations": [
+                    {
+                        "path": "textures/variable_blocks/andesite-1", "weight": 1
+                    },
+                    {
+                        "path": "textures/variable_blocks/andesite-2", "weight": 1
+                    },
+                    {
+                        "path": "textures/variable_blocks/andesite-3", "weight": 1
+                    },
+                    {
+                        "path": "textures/variable_blocks/andesite-4", "weight": 1
+                    },
+                    {
+                        "path": "textures/variable_blocks/andesite-5", "weight": 1
+                    }
+                ]
+            }
+        ]
+        },
+        "DZ_andesite-carried": {
+            "textures": "textures/animated_blocks/andesite"
+        }
+    }
+}

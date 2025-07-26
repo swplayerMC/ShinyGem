@@ -1,0 +1,12 @@
+{
+    "format_version": [ 1, 1, 0 ], //  A mais recente... se nao me engano
+    "nome_do_block": {
+        "sound": "nome_no_'block_sounds'_do_sounds.json",
+        "textures": "nome_no_terrain_textures",
+        "carried_textures": "(opt)textura_quando_na_mao_do_jogador",
+        "isotropic": {
+            "se_os_lados_rotacionam_aleatoriamente(deve_se_usar_booleanos_em_cada_chave)",
+            "valores_pra_usar": ["up", "down", "east", "north", "west", "south", { "side": "para-east_north_west_south-de_uma_vez" }]
+        }
+    }
+}

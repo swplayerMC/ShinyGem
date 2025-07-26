@@ -1,0 +1,11 @@
+[
+    {
+        "flipbook_texture": "caminho/desda/root",
+        "atlas_tile": "nome_definido_no_terrain_textures",
+        "atlas_tile_variant": "int(opt-index_da_variante_definida_no_terrain_texture)",
+        "atlas_tile_index": "int(ainda_nao_sei_o_que_faz)"
+        "ticks_per_frame": "int(20_ticks=1_segundo)",
+        "frames": ["int(cada_valor_nesta_lista_deve_ser_um_inteiro)_ordem_dos_frames(se_nao_citado_ele_faz_a_sequencia_automaticamente_eu_acho"],
+        "blend_frames": "bool(motion_blur?)"
+    }
+]

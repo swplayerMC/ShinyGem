@@ -1,0 +1,13 @@
+{
+    "format_version": [ 1, 1, 0 ],
+    "andesite" : {
+        "sound" : "stone",
+        "textures" : "DZ_andesite-on-ground",
+        "carried_textures": "DZ_andesite-carried",
+        "isotropic": {
+            "up": true,
+            "side": false,
+            "down": true
+        }
+    }
+}

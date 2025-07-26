@@ -1,0 +1,11 @@
+[
+    {
+        "flipbook_texture": "textures/animated_blocks/andesite",
+        "atlas_tile": "DZ_andesite-carried",
+        "ticks_per_frame": 20,
+        "frames": [
+            0, 1, 2, 3, 4, 3, 2, 1
+        ],
+        "blend_frames": true
+    }
+]
