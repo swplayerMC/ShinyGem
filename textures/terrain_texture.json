@@ -1,0 +1,30 @@
+{
+    "resource_pack_name": "vanilla",
+    "texture_name": "atlas.terrain",
+    "texture_data": {
+        "diamond_ore": {
+            "textures": [
+                {
+                    "variations": [
+                        {
+                            "path": "textures/blocks/variables/diamond_ore1",
+                            "weight": 1
+                        },
+                        {
+                            "path": "textures/blocks/variables/diamond_ore2",
+                            "weight": 1
+                        },
+                        {
+                            "path": "textures/blocks/variables/diamond_ore3",
+                            "weight": 1
+                        },
+                        {
+                            "path": "textures/blocks/variables/diamond_ore4",
+                            "weight": 1
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
