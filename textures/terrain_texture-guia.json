@@ -1,6 +1,6 @@
 {
     "resource_pack_name": "vanilla",
-    "resource_name": "atlas.terrain",
+    "texture_name": "atlas.terrain",
     "texture_data": {
         "variable_block_example": {
             "textures": [
