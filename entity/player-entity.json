@@ -97,8 +97,7 @@
             "mira_segurando_picareta": "animation.sg_crosshair.segurando_picareta",
             "mira_segurando_armadura": "animation.sg_crosshair.segurando_armaduras",
             "mira_segurando_lancadores": "animation.sg_crosshair.segurando_lancadores",
-            "mira_segurando_outros": "animation.sg_crosshair.segurando_outros",
-            "scripts": "animation.player.scripts"
+            "mira_segurando_outros": "animation.sg_crosshair.segurando_outros"
             //   /\  Animações da mira  /\
         },
         "scripts": {
@@ -156,7 +155,7 @@
                 "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
             ],
             "animate": [
-                "root",
+                "raiz",
                 "mira_dinamica",
                 "fixar_mira",
                 {
