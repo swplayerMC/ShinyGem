@@ -1,0 +1,82 @@
+{
+    "namespace": "common",
+
+    "sg_background_animation": {
+        "anim_type": "flip_book",
+        "initial_uv": [ 0, 0 ],
+        "frame_count": 14,
+        "frame_step": 7,
+        "fps": 4,
+        "reversible": false,
+        "easing": "linear"
+    },
+
+    "sg_gamepad_cursor_animation": {
+        "anim_type": "flip_book",
+        "initial_uv": [ 0, 0 ],
+        "frame_count": 2,
+        "frame_step": 4,
+        "fps": 2,
+        "reversible": false,
+        "easing": "linear"
+    },
+
+    "gamepad_cursor_image": {
+        "type": "image",
+        "texture": "images/ui/gamepad_cursor",
+        "follows_cursor": true,
+        "layer": 60,
+        "size": [ 14, 14 ],
+        "uv_size": [ 16, 16 ],
+        "uv": "@common.sg_gamepad_cursor_animation",
+        "disable_anim_fast_forw1ard": true,
+
+        "bindings": [
+            {
+                "binding_name": "#gamepad_cursor_visible",
+                "binding_name_override": "#visible",
+                "binding_condition": "always"
+            }
+        ]
+    },
+
+    "gamepad_cursor_button": {
+        "type": "button",
+        "visible": false,
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "locked_control": "",
+        "default_control": "default",
+        "hover_control": "hover",
+        "pressed_control": "pressed",
+        "layer": -10,
+        "size": [ 16, 16 ],
+        "follows_cursor": true,
+        "always_handle_pointer": true,
+        "controls": [
+            { 
+                "default@gamepad_cursor_image": {} 
+            },
+            { 
+                "pressed@gamepad_cursor_image": {} 
+            },
+            { 
+                "hover@gamepad_cursor_image": {} 
+            }
+        ]
+    },
+
+    "dialog_background_opaque@dialog_background_common": {
+        "type": "image",
+        "texture": "images/ui/fundo_animado",
+        "size": [ 176, 166 ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "layer": -10,
+        "ignored": "$is_holographic",
+        "alpha": 1,
+        "uv_size": [ 8, 8 ],
+        "uv": "@common.sg_background_animation",
+        "disable_anim_fast_forward": true
+    }
+}

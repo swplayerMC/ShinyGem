@@ -11,9 +11,9 @@
         "size": [ 20, 20 ],
         "anchor_from": "center",
         "anchor_to": "center",
-        "anims": [
-            "@SG_touch_cursor.animation"
-        ]
+        "uv_size": [ 17, 17 ],
+        "uv": "@SG_touch_cursor.animation",
+        "disable_anim_fast_forward": true
     },
 
 	// Desativando os elementos do chat padrão (o chat na HUD, não a tela do chat em si)
