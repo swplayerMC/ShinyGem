@@ -14,7 +14,6 @@
         "anims": [
             "@SG_touch_cursor.animation"
         ]
-    
     },
 
 	// Desativando os elementos do chat padrão (o chat na HUD, não a tela do chat em si)
