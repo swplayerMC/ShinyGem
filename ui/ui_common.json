@@ -29,7 +29,7 @@
         "size": [ 14, 14 ],
         "uv_size": [ 16, 16 ],
         "uv": "@common.sg_gamepad_cursor_animation",
-        "disable_anim_fast_forw1ard": true,
+        "disable_anim_fast_forward": true,
 
         "bindings": [
             {

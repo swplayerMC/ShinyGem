@@ -51,42 +51,6 @@
 						"custom_chat@SG_java_chat.custom_chat": {}
 					},
 					{
-						"name_tag": {
-							"type": "custom",
-							"renderer": "name_tag_renderer",
-							"layer": 3,
-							"anchor_from": "top_middle",
-							"anchor_to": "bottom_middle",
-							"size": [ 8, 8 ],
-							"bindings": [
-								{
-									"binding_name": "#playername"
-								}
-							],
-							"$input_keyboard|default": false,
-							"controls": [
-								{
-									"keyboard": {
-										"type": "label",
-										"text": "Keyboard",
-										"offset": [ 0, 15 ],
-										"ignored": "$input_keyboard",
-										"variables": [
-											{
-												"requires": "($mouse)",
-												"$input_keyboard": true
-											},
-											{
-												"requires": "(not $mouse)",
-												"$input_keyboard": false
-											}
-										]
-									}
-								}
-							]
-						}
-					},
-					{
 						"view_bobbing_warning@SG_crosshair.view_bobbing_warning": {}
 					}/*,
 					{
