@@ -20,6 +20,7 @@
 	                "animations": [
 						"camera",
 						"movimentacao",
+						"ao_andar",
 	                    "se_afk"
 	                ],
 	                "transitions": [
@@ -46,10 +47,7 @@
 				},
 				"agachado": {
 					"animations": [
-						"3p_agachado",
-						{
-							"3p_andando_agachado": "q.is_moving && q.is_sneaking"
-						}
+						"3p_agachado"
 					],
 					"transitions": [
 						{
@@ -57,6 +55,29 @@
 						}
 					],
 					"blend_transition": 0.1
+				}
+			}
+		},
+		"controller.animation.player.andando": {
+			"initial_state": "parado",
+			"states": {
+				"parado": {
+					"transitions": [
+						{
+							"andando": "q.is_moving"
+						}
+					],
+					"blend_transition": 0.3
+				},
+				"andando": {
+					"animations": [
+							"andando"
+					],
+					"transitions": [
+						{
+							"parado": "!q.is_moving"
+						}
+					]
 				}
 			}
 		},
@@ -70,10 +91,10 @@
 					]
 				},
 				"parado": {
-					"on_entry": ["t.afk = q.life_time; t.afk_anim = math.random_integer(1, 3);"],
+					"on_entry": ["v.afk = q.life_time; v.afk_anim = math.random_integer(1, 3);"],
 					"animations": [
 						{
-							"3p_afk1": "t.afk_anim == 1 && (q.life_time - t.afk) >= 10"
+							"3p_afk1": "v.afk_anim == 1 && (q.life_time - v.afk) >= 10"
 						}
 					],
 					"transitions": [
