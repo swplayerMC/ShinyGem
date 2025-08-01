@@ -115,6 +115,27 @@
 					]
 				}
 			}
+		},
+		"controller.animation.jump_reseting": {
+			"states": {
+				"default": {
+					"transitions": [
+						{
+							"did_a_jump_reset": "v.genfx_vfx_jump_reset || v.reset_count >= 1"
+						}
+					]
+				},
+				"did_a_jump_reset": {
+					"animations": [
+						"jump_reset_sfx"
+					],
+					"transitions": [
+						{
+							"default": "!v.genfx_vfx_jump_reset"
+						}
+					]
+				}
+			}
 		}
 	}
 }

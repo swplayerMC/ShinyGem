@@ -76,8 +76,6 @@
             "camera": "animation.player.camera_fix",
             "movimentacao": "controller.animation.player.3p_movimentos",
             "se_afk": "controller.animation.player.afk",
-            "pegou_um_combo": "animation.player.pegou_um_combo",
-            "combo": "controller.animation.player.combo",
             "ao_andar": "controller.animation.player.andando",
             "andando": "animation.player.andando",
             "1p_parado": "animation.player.1p",
@@ -87,6 +85,14 @@
             "3p_andando_agachado": "animation.player.3p_andando_agachado",
             "3p_spawnando": "animation.player.3p_spawn_setup",
             //   /\  Animações personalizadas do jogador  /\
+            
+            
+            //Animações de efeitos especiais:
+            "if_jump_reseting": "controller.animation.jump_reseting",
+            "jump_reset_sfx": "animation.player.jump_reset",
+            "combo": "controller.animation.player.combo",
+            "pegou_um_combo": "animation.player.pegou_um_combo",
+            //   /\  Efeitos especiais  /\
 
 
             //Animações da mira:
@@ -111,7 +117,9 @@
                 "v.jump_reset = 0;",
                 "v.genfx_combo = 0;",
                 "v.genfx_crosshair_geo = 0;",
+                "v.tomou_hit = v.tomou_hit ?? 0;",
                 "v.hurt = 0;",
+                "v.reset_count = v.reset_count ?? 0;",
                 "variable.is_holding_right = 0.0;",
                 "variable.is_blinking = 0.0;",
                 "variable.last_blink_time = 0.0;",
@@ -121,6 +129,8 @@
                 //"t.rotation = Math.mod(360 + Math.mod(Math.atan2(query.position_delta(0), query.position_delta(2)) + query.head_y_rotation(0), 360), 360);",
 
                 //"t.is_local_player -> q.is_local_player",
+
+                "v.tomou_hit = q.hurt_time - q.frame_alpha;",
 
                 "t.genfx_jreset_speed = q.ground_speed < 3 && q.vertical_speed > 1 ? 1 : 0;",
 
@@ -157,20 +167,19 @@
                 "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
             ],
             "animate": [
-                "raiz",
+                "root",
                 "mira_dinamica",
                 "fixar_mira",
-                
+                "if_jump_reseting",
                 {
                     "3p_spawnando": "q.life_time < 0.9"
                 },
-                "combo",
                 "scripts"
             ]
         },
         //"particle_effects": { "sname": "identifier" },
         "sound_effects": { 
-            "combo_coin_sfx": "generatefx.sound_effects.player_combo"
+            "coin_sfx": "generatefx.sound_effects.coin"
         },
         "materials": {
             "default": "entity_alphatest",
@@ -209,10 +218,11 @@
             "controller.render.player",
             {
                 "controller.render.player.map": "variable.map_face_icon"
-            },
-            {
-                "controller.render.sg_crosshair": "q.is_in_ui && v.is_paperdoll"
             }
+            //},
+            // {
+            //     "controller.render.sg_crosshair": "q.is_in_ui && v.is_paperdoll"
+            // }
         ],
         "min_engine_version": "1.10.0",
         "enable_attachables": true

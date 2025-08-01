@@ -42,6 +42,15 @@
 					"rotation": ["v.is_first_person ? this : -math.sin(q.walk_distance * 100) * 30", "this", "this"]
 				}
 			}
+		},
+		"animation.player.jump_reset": {
+			"loop": true,
+			"animation_length": 0.4,
+			"sound_effects": {
+				"0.0": {
+					"effect": "coin_sfx"
+				}
+			}
 		}
 	}
 }

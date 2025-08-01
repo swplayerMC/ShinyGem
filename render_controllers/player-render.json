@@ -36,6 +36,15 @@
                 "g": "1.0f",
                 "b": "1.0f",
                 "a": "q.is_spectator ? 0.3 : 1"
+            },
+            "overlay_color": {
+                "r": 1.0,
+                "g": 1.0,
+                "b": 1.0,
+                "a": "q.hurt_time"
+            },
+            "is_hurt_color": {
+                "a": "0.3; q.is_jumping ? { v.genfx_vfx_jump_reset = 1; v.reset_count = v.reset_count + v.genfx_vfx_jump_reset; return v.reset_count; } : { v.reset_count = 0; };"
             }
         },
         "controller.render.player_combo": {
