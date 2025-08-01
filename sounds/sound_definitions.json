@@ -72,7 +72,7 @@
             }
         ]
     },
-    "generatefx.sound_effects.player_combo": {
+    "generatefx.sound_effects.coin": {
         "__use_legacy_max_distance": "true",
         "category": "player",
         "max_distance": null,
@@ -81,38 +81,38 @@
             {
                 "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.6,
-                "volume": 10.0
+                "volume": 0
             },
             {
                 "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.4,
-                "volume": 10.0
+                "volume": 0
             },
             {
                 "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.2,
-                "volume": 10.0
+                "volume": 0
             },
             {
                 "load_on_low_memory": true,
                 "name": "sounds/effects/pegou_um_combo",
                 "pitch": 1.0,
-                "volume": 10.0
+                "volume": 0
             },
             {
                 "name": "sounds/effects/pegou_um_combo",
                 "pitch": 0.8,
-                "volume": 10.0
+                "volume": 0
             },
             {
                 "name": "sounds/effects/pegou_um_combo",
                 "pitch": 0.6,
-                "volume": 10.0
+                "volume": 0
             },
             {
                 "name": "sounds/effects/pegou_um_combo",
                 "pitch": 0.4,
-                "volume": 10.0
+                "volume": 0
             }
         ]
     }
