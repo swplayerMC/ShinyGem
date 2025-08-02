@@ -110,7 +110,9 @@
         },
         "scripts": {
             "scale": "0.9375",
-            //"variables": {},
+            "variables": {
+                "variable.attack_time": "public"
+            },
             "initialize": [
                 "v.crosshair_color_index = 0;",
                 "v.jump_reset_count = 0;",
