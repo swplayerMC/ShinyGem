@@ -1,0 +1,14 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.sg_swords.parado": {
+			"loop": true,
+			"bones": {
+				"espada": {
+					"rotation": ["c.is_first_person ? 30 : 90", "c.is_first_person ? -3", "c.is_first_person ? -134 : -90"],
+					"position": [0, 23, "c.is_first_person ? 4.6 : 3"]
+				}
+			}
+		}
+	}
+}

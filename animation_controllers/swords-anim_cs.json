@@ -1,0 +1,18 @@
+{
+    "format_version": "1.10",
+    "animation_controllers": {
+        "controller.animation.sg_swords": {
+            "initial_state": "principal",
+            "states": {
+                "principal": {
+                   "on_entry": [
+                        "return 0;"
+                    ],
+                    "animations": [
+                        "parado"                        
+                    ]
+                }
+            }
+        }
+    }
+}

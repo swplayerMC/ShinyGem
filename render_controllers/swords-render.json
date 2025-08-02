@@ -1,0 +1,26 @@
+{
+    "format_version": "1.10",
+    "render_controllers": {
+        "controller.render.sg_swords": {
+            "geometry": "Geometry.default",
+            "materials": [
+                {
+                    "*": "v.is_enchanted ? { Material.enchanted; v.sword_state = 'enchanted'; return v.sword_state; } : Material.default;"
+                }
+            ],
+            "textures": [
+                "Texture.default",
+                "Texture.enchanted"
+            ],
+            "overlay_color": {
+                "r": 0.267, 
+                "g": 0.0,
+                "b": 1.0,
+                "a": "v.sword_state == 'enchanted' ? 1 : 0"
+            },
+            "is_hurt_color": {
+                "a": "return 0;"
+            }
+        }
+    }
+}

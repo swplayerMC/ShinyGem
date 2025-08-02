@@ -1,0 +1,41 @@
+{
+    "format_version": "1.21.90",
+    "minecraft:attachable": {
+        "description": {
+            "identifier": "minecraft:stone_sword",
+            "materials": {
+                "default": "entity_alphablend",
+                "enchanted": "entity_alphatest_glint"
+            },
+            "textures": {
+                "default": "images/models/stone_sword",
+                "enchanted": "textures/misc/enchanted_item_glint"
+            },
+            "geometry": {
+                "default": "geometry.sg_swords"
+            },
+            "animations": {
+                "raiz": "controller.animation.sg_swords",
+                "parado": "animation.sg_swords.parado"
+            },
+            "scripts": {
+                "initialize": [
+                    "v.sword_state = 'normal';",
+                    "v.flash_chances = 0;",
+                    "v.flash = 0;"
+                ],
+                "pre_animation": [
+                    "v.is_enchanted ? { v.sword_state = 'enchanted'; return v.sword_state; };",
+                    "v.flash_chances -> v.attack_time > 0 ? { v.flash_chances = math.random_integer(0, 4); }; v.flash_chances == 4 ? { v.flash = 1 - math.lerp(0, 1, q.delta_time); };"
+                ],
+                "animate": [
+                    "raiz"
+                ],
+                "should_update_bones_and_effects_offscreen": true
+            },
+            "render_controllers": [
+                "controller.render.sg_swords"
+            ]
+        }
+    }
+}
