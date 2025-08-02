@@ -5,7 +5,7 @@
             "geometry": "Geometry.default",
             "materials": [
                 {
-                    "*": "v.is_enchanted ? { Material.enchanted; v.sword_state = 'enchanted'; return v.sword_state; } : Material.default;"
+                    "*": "v.is_enchanted ? Material.enchanted : Material.default;"
                 }
             ],
             "textures": [
