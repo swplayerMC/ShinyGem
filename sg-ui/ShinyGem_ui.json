@@ -1,0 +1,44 @@
+{
+    "namespace": "sg_ui",
+
+    "inventario_animado": {
+        "type": "image",
+        "texture": "images/ui/fundo_animado",
+        "size": [ 176, 166 ],
+        "anchor_from": "top_left",
+        "anchor_to": "top_left",
+        "layer": -9,
+        //"ignored": "$is_holographic",
+        "alpha": 1,
+        "uv_size": [ 8, 8 ],
+        "uv": "@common.sg_background_animation",
+        "disable_anim_fast_forward": true
+    },
+
+    "elementos": {
+        "type": "panel",
+        "controls": [
+            // {
+			// 	"mira_dinamica": {
+            // 		"type": "custom",
+            // 		"renderer": "live_player_renderer",
+            // 		"anchor_from": "center",
+            // 		"anchor_to": "center",
+            // 		"size": [ "200%", "200%" ]
+            // 	}
+            // },
+            {
+                "crosshair@SG_crosshair.crosshair_image": {}
+            },
+            {
+                "custom_chat@SG_java_chat.custom_chat": {}
+            }/*,
+            {
+                "view_bobbing_warning@SG_crosshair.view_bobbing_warning": {}
+            }/*,
+            {
+                "hud_title_text@SG_title_panel.hud_title_text": {}
+            }*/
+        ]
+    }
+}

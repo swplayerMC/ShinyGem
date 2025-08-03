@@ -32,30 +32,12 @@
 	"root_panel": {
 		"modifications": [
 			{
-				"array_name": "controls", //Adiciona os itens da lista "value" abaixo, na lista "controls" do objeto "hud_content" do arquivo "hud_screen.json" sem alterar nada no vanilla
+				"array_name": "controls", //Adiciona os itens da lista "value" abaixo, na lista "controls" do objeto "root_panel" do arquivo "hud_screen.json" sem alterar nada no vanilla
 				"operation": "insert_front", //Isso faz ele adicionar ao topo da lista
 				"value": [ //O que ele adiciona:
-					// {
-					// 	"mira_dinamica": {
-					// 		"type": "custom",
-					// 		"renderer": "live_player_renderer",
-					// 		"anchor_from": "center",
-					// 		"anchor_to": "center",
-					// 		"size": [ "200%", "200%" ]
-					// 	}
-					// },
 					{
-						"crosshair@SG_crosshair.crosshair_image": {}
-					},
-					{
-						"custom_chat@SG_java_chat.custom_chat": {}
-					}/*,
-					{
-						"view_bobbing_warning@SG_crosshair.view_bobbing_warning": {}
-					}/*,
-					{
-					    "hud_title_text@SG_title_panel.hud_title_text": {}
-					}*/
+						"ShinyGem_ui@sg_ui.elementos": {} // Adiciona os elementos do arquivo "sg-ui/ShinyGem_ui.json"
+					}
 				]
 			}
 		]

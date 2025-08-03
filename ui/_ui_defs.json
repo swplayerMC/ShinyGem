@@ -2,6 +2,7 @@
     //De preferencia, organize em ordem alfabetica  :)
     //It's good to put the json paths in alphabetical order   :)
     "ui_defs": [
+        "sg-ui/ShinyGem_ui.json",
         "sg-ui/crosshair_ui.json",
         "sg-ui/custom_chat_panel.json",
         "sg-ui/custom_title_panel.json",

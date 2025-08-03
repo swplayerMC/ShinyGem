@@ -38,7 +38,7 @@
                 "binding_condition": "always"
             }
         ]
-    },
+    }/*,
 
     "gamepad_cursor_button": {
         "type": "button",
@@ -78,5 +78,5 @@
         "uv_size": [ 8, 8 ],
         "uv": "@common.sg_background_animation",
         "disable_anim_fast_forward": true
-    }
+    }*/
 }
