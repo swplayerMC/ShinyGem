@@ -170,8 +170,8 @@
             ],
             "animate": [
                 "root",
-                "mira_dinamica",
-                "fixar_mira",
+                //"mira_dinamica",
+                //"fixar_mira",
                 "if_jump_reseting",
                 {
                     "3p_spawnando": "q.life_time < 0.9"
