@@ -1,0 +1,170 @@
+{
+    "namespace": "inv-anim",
+    "config": {
+        "anim_type": "uv",
+        "duration": 0.125,
+        "next": "$proximo_frame",
+        "from": "$frame_uv",
+        "to": "$frame_uv"
+    },
+
+    "frame1@inv-anim.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@inv-anim.frame2"
+    },
+
+    "frame2@inv-anim.config": {
+        "$frame_uv": [ 0, 200 ],
+        "$proximo_frame": "@inv-anim.frame3"
+    },
+
+    "frame3@inv-anim.config": {
+        "$frame_uv": [ 0, 400 ],
+        "$proximo_frame": "@inv-anim.frame4"
+    },
+
+    "frame4@inv-anim.config": {
+        "$frame_uv": [ 0, 600 ],
+        "$proximo_frame": "@inv-anim.frame5"
+    },
+
+    "frame5@inv-anim.config": {
+        "$frame_uv": [ 0, 800 ],
+        "$proximo_frame": "@inv-anim.frame6"
+    },
+
+    "frame6@inv-anim.config": {
+        "$frame_uv": [ 0, 1000 ],
+        "$proximo_frame": "@inv-anim.frame7"
+    },
+
+    "frame7@inv-anim.config": {
+        "$frame_uv": [ 0, 1200 ],
+        "$proximo_frame": "@inv-anim.frame8"
+    },
+
+    "frame8@inv-anim.config": {
+        "$frame_uv": [ 0, 1400 ],
+        "$proximo_frame": "@inv-anim.frame9"
+    },
+
+    "frame9@inv-anim.config": {
+        "$frame_uv": [ 0, 1600 ],
+        "$proximo_frame": "@inv-anim.frame10"
+    },
+
+    "frame10@inv-anim.config": {
+        "$frame_uv": [ 0, 1800 ],
+        "$proximo_frame": "@inv-anim.frame11"
+    },
+
+    "frame11@inv-anim.config": {
+        "$frame_uv": [ 0, 2000 ],
+        "$proximo_frame": "@inv-anim.frame12"
+    },
+
+    "frame12@inv-anim.config": {
+        "$frame_uv": [ 0, 2200 ],
+        "$proximo_frame": "@inv-anim.frame13"
+    },
+
+    "frame13@inv-anim.config": {
+        "$frame_uv": [ 0, 2400 ],
+        "$proximo_frame": "@inv-anim.frame14"
+    },
+
+    "frame14@inv-anim.config": {
+        "$frame_uv": [ 0, 2600 ],
+        "$proximo_frame": "@inv-anim.frame15"
+    },
+
+    "frame15@inv-anim.config": {
+        "$frame_uv": [ 0, 2800 ],
+        "$proximo_frame": "@inv-anim.frame16"
+    },
+
+    "frame16@inv-anim.config": {
+        "$frame_uv": [ 0, 3000 ],
+        "$proximo_frame": "@inv-anim.frame17"
+    },
+
+    "frame17@inv-anim.config": {
+        "$frame_uv": [ 0, 3200 ],
+        "$proximo_frame": "@inv-anim.frame18"
+    },
+
+    "frame18@inv-anim.config": {
+        "$frame_uv": [ 0, 3400 ],
+        "$proximo_frame": "@inv-anim.frame19"
+    },
+
+    "frame19@inv-anim.config": {
+        "$frame_uv": [ 0, 3600 ],
+        "$proximo_frame": "@inv-anim.frame20"
+    },
+
+    "frame20@inv-anim.config": {
+        "$frame_uv": [ 0, 3800 ],
+        "$proximo_frame": "@inv-anim.frame21"
+    },
+
+    "frame21@inv-anim.config": {
+        "$frame_uv": [ 0, 4000 ],
+        "$proximo_frame": "@inv-anim.frame22"
+    },
+
+    "frame22@inv-anim.config": {
+        "$frame_uv": [ 0, 4200 ],
+        "$proximo_frame": "@inv-anim.frame23"
+    },
+
+    "frame23@inv-anim.config": {
+        "$frame_uv": [ 0, 4400 ],
+        "$proximo_frame": "@inv-anim.frame24"
+    },
+
+    "frame24@inv-anim.config": {
+        "$frame_uv": [ 0, 4600 ],
+        "$proximo_frame": "@inv-anim.frame25"
+    },
+
+    "frame25@inv-anim.config": {
+        "$frame_uv": [ 0, 4800 ],
+        "$proximo_frame": "@inv-anim.frame26"
+    },
+
+    "frame26@inv-anim.config": {
+        "$frame_uv": [ 0, 5000 ],
+        "$proximo_frame": "@inv-anim.frame27"
+    },
+
+    "frame27@inv-anim.config": {
+        "$frame_uv": [ 0, 5200 ],
+        "$proximo_frame": "@inv-anim.frame28"
+    },
+
+    "frame28@inv-anim.config": {
+        "$frame_uv": [ 0, 5400 ],
+        "$proximo_frame": "@inv-anim.frame29"
+    },
+
+    "frame29@inv-anim.config": {
+        "$frame_uv": [ 0, 5600 ],
+        "$proximo_frame": "@inv-anim.frame30"
+    },
+
+    "frame30@inv-anim.config": {
+        "$frame_uv": [ 0, 5800 ],
+        "$proximo_frame": "@inv-anim.frame31"
+    },
+
+    "frame31@inv-anim.config": {
+        "$frame_uv": [ 0, 6000 ],
+        "$proximo_frame": "@inv-anim.frame32"
+    },
+
+    "frame32@inv-anim.config": {
+        "$frame_uv": [ 0, 6200 ],
+        "$proximo_frame": "@inv-anim.frame1"
+    }
+}

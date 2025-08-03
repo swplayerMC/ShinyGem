@@ -1,17 +1,27 @@
 {
     "namespace": "sg_ui",
 
+    "sg_background_animation": {
+        "anim_type": "flip_book",
+        "initial_uv": [ 0, 0 ],
+        "frame_count": 36,
+        "frame_step": 200,
+        "fps": 8,
+        "reversible": false,
+        "easing": "linear"
+    },
+
     "inventario_animado": {
         "type": "image",
-        "texture": "images/ui/fundo_animado",
+        "texture": "images/ui/fundo_animado_vertical",
         "size": [ 176, 166 ],
         "anchor_from": "top_left",
         "anchor_to": "top_left",
         "layer": -9,
         //"ignored": "$is_holographic",
         "alpha": 1,
-        "uv_size": [ 8, 8 ],
-        "uv": "@common.sg_background_animation",
+        "uv_size": [ 200, 200 ],
+        "uv": "@inv-anim.frame1",
         "disable_anim_fast_forward": true
     },
 

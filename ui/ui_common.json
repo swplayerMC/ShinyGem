@@ -1,16 +1,6 @@
 {
     "namespace": "common",
 
-    "sg_background_animation": {
-        "anim_type": "flip_book",
-        "initial_uv": [ 0, 0 ],
-        "frame_count": 14,
-        "frame_step": 7,
-        "fps": 4,
-        "reversible": false,
-        "easing": "linear"
-    },
-
     "sg_gamepad_cursor_animation": {
         "anim_type": "flip_book",
         "initial_uv": [ 0, 0 ],

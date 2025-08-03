@@ -6,6 +6,7 @@
         "sg-ui/crosshair_ui.json",
         "sg-ui/custom_chat_panel.json",
         "sg-ui/custom_title_panel.json",
+        "sg-ui/inventory_animation.json",
         "sg-ui/shinygem_screen.json",
         "sg-ui/touch_cursor.json",
         "ui/chat_screen.json",
