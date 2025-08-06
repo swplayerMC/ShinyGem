@@ -2,13 +2,26 @@
     //De preferencia, organize em ordem alfabetica  :)
     //It's good to put the json paths in alphabetical order   :)
     "ui_defs": [
+        // ShinyGem UI definitions
         "sg-ui/ShinyGem_ui.json",
+
         "sg-ui/crosshair_ui.json",
+
         "sg-ui/custom_chat_panel.json",
+
         "sg-ui/custom_title_panel.json",
+
+        // Custom Animated UI elements
         "sg-ui/inventory_animation.json",
-        "sg-ui/shinygem_screen.json",
+
+        "sg-ui/xp_bar_animation.json",
+
         "sg-ui/touch_cursor.json",
+
+        // ShinyGem SCREEN definitions
+        "sg-ui/shinygem_screen.json",
+        
+        // Vanilla UI definitions
         "ui/chat_screen.json",
         "ui/hud_screen.json",
         "ui/pause_screen.json",

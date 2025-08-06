@@ -1,0 +1,46 @@
+{
+    "namespace": "xp_bar_animation",
+
+    "config": {
+        "anim_type": "uv",
+        "from": "$frame_uv",
+        "to": "$frame_uv",
+        "next": "$proximo_frame",
+        "duration": 0.100
+    },
+
+    "frame1@xp_bar_animation.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@xp_bar_animation.frame2"
+    },
+
+    "frame2@xp_bar_animation.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@xp_bar_animation.frame3"
+    },
+
+    "frame3@xp_bar_animation.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@xp_bar_animation.frame4"
+    },
+
+    "frame4@xp_bar_animation.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@xp_bar_animation.frame5"
+    },
+
+    "frame5@xp_bar_animation.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@xp_bar_animation.frame6"
+    },
+
+    "frame6@xp_bar_animation.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@xp_bar_animation.frame7"
+    },
+
+    "frame7@xp_bar_animation.config": {
+        "$frame_uv": [ 0, 0 ],
+        "$proximo_frame": "@xp_bar_animation.frame1"
+    }
+}

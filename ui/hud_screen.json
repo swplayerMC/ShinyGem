@@ -41,5 +41,32 @@
 				]
 			}
 		]
-	}
+	}/*,
+
+	"empty_progress_bar": {
+		"type": "image",
+		"texture": "images/animated_ui/xp_bar_empty",
+		"size": [ 178, 5 ],
+		"disable_anim_fast_forward": false,
+		"uv_size": [ 61, 6 ],
+		"uv": "@xp_bar_animation.frame1"
+	},
+
+	"full_progress_bar": {
+		"type": "image",
+		"texture": "images/animated_ui/xp_bar_full",
+		"clip_direction": "left",
+		"clip_pixelperfect": false,
+		"size": [ 178, 5 ],
+		"uv_size": [ 61, 6 ],
+		"uv": "@xp_bar_animation.frame1",
+		"disable_anim_fast_forward": false,
+		"bindings": [
+			{
+				"binding_name": "#exp_progress",
+				"binding_name_override": "#clip_ratio",
+				"binding_type": "global"
+			}
+		]
+	}*/
 }
