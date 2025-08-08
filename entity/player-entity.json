@@ -169,14 +169,14 @@
                 "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
             ],
             "animate": [
-                "root",
+                "raiz",
+                //"scripts",
                 //"mira_dinamica",
                 //"fixar_mira",
                 "if_jump_reseting",
                 {
                     "3p_spawnando": "q.life_time < 0.9"
-                },
-                "scripts"
+                }
             ]
         },
         //"particle_effects": { "sname": "identifier" },
