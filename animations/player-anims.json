@@ -30,16 +30,16 @@
 			"animation_length": 0.1,
 			"bones": {
 				"leftLeg": {
-					"rotation": ["-math.sin(q.modified_distance_moved * (q.is_sneaking ? 60 : 35)) * 50", 0, 0]
+					"rotation": ["-math.sin(q.modified_distance_moved * (q.is_sneaking ? 20 : 35)) * (q.is_sneaking ? 25 : 50)", 0, 0]
 				},
 				"rightLeg": {
-					"rotation": ["math.sin(q.modified_distance_moved * (q.is_sneaking ? 60 : 35)) * 50", 0, 0]
+					"rotation": ["math.sin(q.modified_distance_moved * (q.is_sneaking ? 20 : 35)) * (q.is_sneaking ? 25 : 50)", 0, 0]
 				},
 				"leftArm": {
-					"rotation": ["v.is_first_person ? this : math.sin(q.modified_distance_moved * (q.is_sneaking ? 60 : 35)) * 50", "this", "this"]
+					"rotation": ["v.is_first_person ? this : math.sin(q.modified_distance_moved * (q.is_sneaking ? 20 : 35)) * (q.is_sneaking ? 25 : 50)", "this", "this"]
 				},
 				"rightArm": {
-					"rotation": ["v.is_first_person ? this : -math.sin(q.modified_distance_moved * (q.is_sneaking ? 60 : 35)) * 50", "this", "this"]
+					"rotation": ["v.is_first_person ? this : -math.sin(q.modified_distance_moved * (q.is_sneaking ? 20 : 35)) * (q.is_sneaking ? 25 : 50)", "this", "this"]
 				}
 			}
 		},

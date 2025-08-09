@@ -136,18 +136,10 @@
 		},
 		"animation.player.3p_agachado": {
 			"loop": true,
-			"animation_length": 7.2917,
 			"bones": {
 				"body": {
 					"rotation": [7.5, 0, 0],
 					"position": [0, -1, -1]
-				},
-				"leftArm": {
-					"rotation": [2.5, 0, "math.sin(q.anim_time * 50) * -5"],
-					"position": [0, 0, 0]
-				},
-				"rightArm": {
-					"rotation": [2.5, 0, "math.sin(q.anim_time * 50) * 5 "]
 				}
 			}
 		},

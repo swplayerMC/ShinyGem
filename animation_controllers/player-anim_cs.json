@@ -19,7 +19,7 @@
 	            "3p": {
 	                "animations": [
 						"camera",
-						"movimentacao",
+						//"movimentacao",
 						"ao_andar",
 	                    "se_afk"
 	                ],
@@ -62,22 +62,30 @@
 			"initial_state": "parado",
 			"states": {
 				"parado": {
+					"animations": [
+						{
+							"3p_agachado": "q.is_sneaking"
+						}
+					],
 					"transitions": [
 						{
 							"andando": "q.is_moving"
 						}
-					],
-					"blend_transition": 0.3
+					]
 				},
 				"andando": {
 					"animations": [
-							"andando"
+						"andando",
+						{
+							"3p_agachado": "q.is_sneaking"
+						}
 					],
 					"transitions": [
 						{
 							"parado": "!q.is_moving"
 						}
-					]
+					],
+					"blend_transition": 0.3
 				}
 			}
 		},

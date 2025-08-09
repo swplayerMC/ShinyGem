@@ -114,6 +114,8 @@
                 "variable.attack_time": "public"
             },
             "initialize": [
+                "v.use_custom_anims = 1;",
+
                 "v.crosshair_color_index = 0;",
                 "v.jump_reset_count = 0;",
                 "v.jump_reset = 0;",
@@ -169,7 +171,12 @@
                 "variable.item_use_normalized = query.main_hand_item_use_duration / query.main_hand_item_max_duration;"
             ],
             "animate": [
-                "raiz",
+                {
+                    "root": "!v.use_custom_anims"
+                },
+                {
+                    "raiz": "v.use_custom_anims"
+                },
                 //"scripts",
                 //"mira_dinamica",
                 //"fixar_mira",
